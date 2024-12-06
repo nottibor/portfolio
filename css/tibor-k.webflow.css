@@ -3,13 +3,13 @@
   --text-color--text-primary: #2e073f;
   --link-color--link-primary: #7024a6;
   --border-color--border-primary: #2e073f;
-  --base-color-neutral--black: black;
-  --base-color-neutral--white: white;
   --border-color--border-secondary: #a14fd9;
+  --text-color--text-alternate: #ebedee;
   --text-color--text-secondary: #e7d4f5;
   --background-color--see-through-background-alternate: #e3e3e340;
+  --base-color-neutral--white: white;
+  --base-color-neutral--black: black;
   --background-color--background-secondary: #2e073f;
-  --text-color--text-alternate: #ebedee;
   --background-color--see-through-background-secondary: #2e073f0d;
   --black-archive\<deleted\|variable-dccb7db6\>: black;
   --background-color--background-alternate: #e7d4f5;
@@ -746,12 +746,16 @@ figcaption {
 }
 
 .button {
-  border: 1px solid var(--base-color-neutral--black);
-  background-color: var(--base-color-neutral--black);
-  color: var(--base-color-neutral--white);
+  background-color: var(--border-color--border-secondary);
+  color: var(--text-color--text-alternate);
   text-align: center;
-  padding: .75rem 1.5rem;
+  border-radius: .7rem;
+  padding: .5rem 1.25rem;
   text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--border-color--border-primary);
 }
 
 .button.is-link {
@@ -3233,7 +3237,7 @@ figcaption {
 
 .form {
   color: var(--text-color--text-primary);
-  max-width: 70%;
+  max-width: 50%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2rem;
@@ -3245,14 +3249,13 @@ figcaption {
 }
 
 .contact-form-input-style {
-  border: 1px solid var(--border-color--border-secondary);
   background-color: var(--background-color--see-through-background-secondary);
   border-radius: .5rem;
   margin-bottom: 40px;
 }
 
 .contact-form-input-style:focus {
-  border-color: var(--border-color--border-primary);
+  border: 1.5px solid var(--border-color--border-secondary);
   background-color: var(--background-color--see-through-background-secondary);
 }
 
@@ -4200,6 +4203,10 @@ figcaption {
     padding-right: 3rem;
   }
 
+  .form {
+    max-width: 75%;
+  }
+
   .timeline17_item {
     grid-template-columns: 1fr 10rem 1fr;
   }
@@ -5106,6 +5113,10 @@ figcaption {
 
   .contact-modal1_component {
     display: flex;
+  }
+
+  .form {
+    max-width: 90%;
   }
 
   .logo6_wrapper-2 {
