@@ -883,8 +883,7 @@ figcaption {
 }
 
 .button.link {
-  border-width: 1px;
-  border-color: var(--border-color--border-primary);
+  border: 1px solid var(--border-color--border-primary);
   background-color: var(--background-color--see-through-background-alternate);
   color: var(--text-color--text-primary);
   border-radius: .7rem;
