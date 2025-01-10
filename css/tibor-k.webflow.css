@@ -1753,6 +1753,8 @@ figcaption {
   background-color: var(--base-color-neutral--neutral-lighter);
   border-radius: .5rem;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   padding: .25rem;
   position: static;
 }
@@ -5165,10 +5167,6 @@ figcaption {
 
 #w-node-c5e796a0-15e6-57fc-1301-30a1c38d64e8-c38d64e4 {
   justify-self: center;
-}
-
-#w-node-c5e796a0-15e6-57fc-1301-30a1c38d64f0-c38d64e4 {
-  justify-self: end;
 }
 
 #w-node-_336be75c-ab2b-838b-5642-972b6cc86205-690cf431 {
