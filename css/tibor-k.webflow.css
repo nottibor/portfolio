@@ -3917,9 +3917,9 @@ figcaption {
   .navbar13_menu-link-wrapper {
     border-width: 0 2px 2px;
     border-color: var(--border-color--border-secondary);
-    background-color: var(--background-color--see-through-background-alternate);
-    -webkit-backdrop-filter: blur(100rem);
-    backdrop-filter: blur(100rem);
+    background-color: var(--base-color-neutral--neutral-lighter);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     border-radius: 1rem;
     flex-direction: column;
     width: 100%;
