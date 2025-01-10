@@ -20,20 +20,20 @@
   --background-color--background-error: #fef3f2;
   --text-color--text-error: #b42318;
   --base-color-neutral--neutral-lightest: #eee;
-  --border-color--border-alternate: #ebedee;
+  --base-color-neutral--neutral-lighter: #ccc;
   --link-color--link-secondary: #e7d4f5;
   --base-color-neutral--neutral-light: #aaa;
   --base-color-system--success-green-light: #ecfdf3;
   --base-color-system--error-red-light: #fef3f2;
   --base-color-brand--black: black;
   --base-color-brand--white: white;
-  --base-color-neutral--neutral-lighter: #ccc;
   --base-color-neutral--neutral: #666;
   --base-color-neutral--neutral-dark: #444;
   --base-color-neutral--neutral-darker: #222;
   --base-color-neutral--neutral-darkest: #111;
   --base-color-system--success-green: #027a48;
   --base-color-system--error-red: #b42318;
+  --border-color--border-alternate: #ebedee;
 }
 
 .w-layout-grid {
@@ -1690,12 +1690,10 @@ figcaption {
 .navbar13_container {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  border: 1.5px solid var(--border-color--border-alternate);
   background-color: var(--background-color--see-through-background-secondary);
-  -webkit-backdrop-filter: blur(18px);
-  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: var(--text-color--text-alternate);
-  border-radius: .5rem;
   grid-template-rows: auto;
   grid-template-columns: auto 1fr auto;
   grid-auto-columns: 1fr;
@@ -1752,7 +1750,10 @@ figcaption {
 }
 
 .navbar13_menu {
+  background-color: var(--base-color-neutral--neutral-lighter);
+  border-radius: .5rem;
   align-items: center;
+  padding: .25rem;
   position: static;
 }
 
@@ -1768,16 +1769,20 @@ figcaption {
 
 .navbar13_link {
   color: var(--text-color--text-primary);
+  margin: .125rem;
   padding: .5rem 1rem;
 }
 
 .navbar13_link:hover {
-  color: var(--link-color--link-primary);
+  background-color: var(--base-color-neutral--neutral-lightest);
+  border-radius: .5rem;
 }
 
 .navbar13_link.w--current {
+  background-color: var(--base-color-neutral--neutral-lightest);
   color: var(--text-color--text-primary);
-  text-decoration: line-through;
+  border-radius: .5rem;
+  margin: .125rem;
 }
 
 .navbar13_instructions-list-item {
@@ -1797,13 +1802,12 @@ figcaption {
 }
 
 .navbar13_component.delete-this-class {
-  max-width: 60%;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 1.5rem;
   display: block;
-  position: relative;
+  position: static;
+  inset: 0% 0% auto;
 }
 
 .body {
@@ -1933,7 +1937,6 @@ figcaption {
 
 .footer11_top-wrapper {
   grid-column-gap: 4vw;
-  border: 1.5px solid var(--border-color--border-alternate);
   background-color: var(--background-color--see-through-background-secondary);
   border-radius: .5rem;
   grid-template-rows: auto;
@@ -3989,7 +3992,6 @@ figcaption {
   }
 
   .navbar13_component.delete-this-class {
-    max-width: 95%;
     padding-left: 0%;
     padding-right: 0%;
   }
