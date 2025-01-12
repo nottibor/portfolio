@@ -3653,6 +3653,7 @@ figcaption {
 
 .navbar11_link {
   color: var(--text-color--text-primary);
+  border-radius: .5rem;
   margin: .125rem;
   padding: .5rem 1rem;
   font-weight: 500;
@@ -3660,6 +3661,7 @@ figcaption {
 
 .navbar11_link:hover {
   background-color: var(--base-color-neutral--neutral-lightest);
+  box-shadow: none;
   border-radius: .5rem;
 }
 
@@ -3669,6 +3671,7 @@ figcaption {
   border-radius: .5rem;
   margin: .125rem;
   font-weight: 500;
+  box-shadow: 0 1px 6px -1px #0003;
 }
 
 .icon-embed-xsmall-5 {
@@ -3728,6 +3731,7 @@ figcaption {
 
 .navbar11_dropdown-toggle {
   grid-column-gap: .5rem;
+  color: var(--text-color--text-primary);
   align-items: center;
   margin: .125rem;
   padding: .5rem 1rem;
