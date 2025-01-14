@@ -888,7 +888,7 @@ figcaption {
 
 .button.link {
   border: 1px solid var(--border-color--border-primary);
-  background-color: var(--background-color--see-through-background-alternate);
+  background-color: var(--background-color--see-through-background-secondary);
   color: var(--text-color--text-primary);
   border-radius: .5rem;
   padding: .5rem;
@@ -3646,10 +3646,10 @@ figcaption {
 
 .navbar11_menu.is-page-height-tablet {
   background-color: var(--base-color-neutral--neutral-lighter);
-  border-radius: .5rem;
+  border-radius: .7rem;
   margin-left: auto;
   margin-right: auto;
-  padding: .5rem;
+  padding: .25rem;
 }
 
 .navbar11_icon-wrapper {
@@ -3670,9 +3670,9 @@ figcaption {
 }
 
 .navbar11_link.w--current {
-  background-color: var(--base-color-neutral--white);
+  background-color: var(--base-color-neutral--neutral-lightest);
   color: var(--link-color--link-primary);
-  border-radius: .5rem;
+  border-radius: .6rem;
   margin: .125rem;
   font-weight: 500;
   box-shadow: 0 1px 6px -1px #0003;
