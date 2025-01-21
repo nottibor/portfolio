@@ -1941,8 +1941,8 @@ figcaption {
 
 .footer11_top-wrapper {
   grid-column-gap: 4vw;
-  background-color: var(--background-color--see-through-background-secondary);
-  border-radius: .5rem;
+  background-color: var(--base-color-neutral--white);
+  border-radius: 1.5rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr .5fr;
   align-items: start;
