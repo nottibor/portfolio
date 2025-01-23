@@ -2,20 +2,20 @@
   --background-color--background-primary: #111;
   --text-color--text-primary: #eee;
   --link-color--link-primary: #eee;
-  --border-color--border-primary: #ffd60a;
-  --background-color--see-through-background-secondary: #ffd60a0d;
+  --border-color--border-primary: #c473fb;
+  --background-color--see-through-background-secondary: #c473fb0d;
   --text-color--text-secondary: #e1e1e1;
   --border-color--border-secondary: #202020;
-  --background-color--see-through-background-alternate: #ffd60a40;
+  --background-color--see-through-background-alternate: #c473fb33;
   --base-color-neutral--white: white;
   --base-color-neutral--black: black;
   --background-color--background-secondary: #202020;
-  --text-color--text-alternate: #ffd60a;
-  --link-color--link-secondary: #ffd60a;
+  --text-color--text-alternate: #c473fb;
+  --link-color--link-secondary: #c473fb;
   --black-archive\<deleted\|variable-dccb7db6\>: black;
   --background-color--background-alternate: #e7d4f5;
   --link-color--link-alternate: #e1e1e1;
-  --background-color--background-tertiary: #ffd60a;
+  --background-color--background-tertiary: #c473fb;
   --background-color--background-success: #ecfdf3;
   --text-color--text-success: #4ddda1;
   --background-color--background-error: #fef3f2;
@@ -3462,10 +3462,6 @@ figcaption {
   font-size: 3rem;
 }
 
-.heading-5.yellow {
-  color: var(--text-color--text-alternate);
-}
-
 .content13_image-2 {
   aspect-ratio: 16 / 9;
   object-fit: cover;
@@ -4115,10 +4111,6 @@ figcaption {
   border-radius: 1.5rem;
   margin: 1rem auto;
   display: block;
-}
-
-.heading-7, .heading-8, .heading-9, .heading-10 {
-  color: var(--text-color--text-alternate);
 }
 
 @media screen and (max-width: 991px) {
