@@ -1,39 +1,39 @@
 :root {
-  --background-color--background-primary: #ebedee;
-  --text-color--text-primary: #2e073f;
-  --link-color--link-primary: #7024a6;
-  --border-color--border-primary: #2e073f;
-  --background-color--see-through-background-secondary: #2e073f0d;
-  --text-color--text-secondary: #e7d4f5;
-  --border-color--border-secondary: #a14fd9;
-  --background-color--see-through-background-alternate: #e3e3e340;
+  --background-color--background-primary: #111;
+  --text-color--text-primary: #eee;
+  --link-color--link-primary: #eee;
+  --border-color--border-primary: #ffd60a;
+  --background-color--see-through-background-secondary: #ffd60a0d;
+  --text-color--text-secondary: #e1e1e1;
+  --border-color--border-secondary: #202020;
+  --background-color--see-through-background-alternate: #ffd60a40;
   --base-color-neutral--white: white;
   --base-color-neutral--black: black;
-  --background-color--background-secondary: #2e073f;
-  --text-color--text-alternate: #ebedee;
+  --background-color--background-secondary: #202020;
+  --text-color--text-alternate: #ffd60a;
+  --link-color--link-secondary: #ffd60a;
   --black-archive\<deleted\|variable-dccb7db6\>: black;
   --background-color--background-alternate: #e7d4f5;
-  --link-color--link-alternate: white;
-  --background-color--background-tertiary: #a14fd9;
+  --link-color--link-alternate: #e1e1e1;
+  --background-color--background-tertiary: #ffd60a;
   --background-color--background-success: #ecfdf3;
-  --text-color--text-success: #027a48;
+  --text-color--text-success: #4ddda1;
   --background-color--background-error: #fef3f2;
-  --text-color--text-error: #b42318;
+  --text-color--text-error: #eb4b3f;
   --base-color-neutral--neutral-lightest: #eee;
   --base-color-neutral--neutral-lighter: #cfcfcf;
-  --link-color--link-secondary: #e7d4f5;
-  --base-color-neutral--neutral-light: #aaa;
   --base-color-system--success-green-light: #ecfdf3;
   --base-color-system--error-red-light: #fef3f2;
   --base-color-brand--black: black;
   --base-color-brand--white: white;
+  --base-color-neutral--neutral-light: #e1e1e1;
   --base-color-neutral--neutral: #666;
   --base-color-neutral--neutral-dark: #444;
   --base-color-neutral--neutral-darker: #222;
   --base-color-neutral--neutral-darkest: #111;
-  --base-color-system--success-green: #027a48;
-  --base-color-system--error-red: #b42318;
-  --border-color--border-alternate: #ebedee;
+  --base-color-system--success-green: #4ddda1;
+  --base-color-system--error-red: #eb4b3f;
+  --border-color--border-alternate: #eee;
 }
 
 .w-layout-grid {
@@ -873,11 +873,12 @@ figcaption {
 .button.is-link.is-icon {
   grid-column-gap: .5rem;
   grid-row-gap: .5rem;
-  color: var(--text-color--text-primary);
+  color: var(--link-color--link-primary);
 }
 
 .button.is-link.is-icon:hover {
   background-color: var(--background-color--see-through-background-secondary);
+  color: var(--link-color--link-secondary);
   text-decoration: underline;
 }
 
@@ -889,15 +890,15 @@ figcaption {
 .button.link {
   border: 1px solid var(--border-color--border-primary);
   background-color: var(--background-color--see-through-background-secondary);
-  color: var(--text-color--text-primary);
+  color: var(--link-color--link-secondary);
   border-radius: .5rem;
   padding: .5rem;
   font-weight: 300;
 }
 
 .button.link:hover {
-  background-color: var(--background-color--background-secondary);
-  color: var(--text-color--text-alternate);
+  background-color: var(--background-color--see-through-background-alternate);
+  color: var(--link-color--link-secondary);
 }
 
 .text-weight-normal {
@@ -1133,7 +1134,7 @@ figcaption {
 }
 
 .icon-embed-xsmall:hover {
-  color: var(--link-color--link-primary);
+  color: var(--link-color--link-secondary);
 }
 
 .icon-height-xxsmall {
@@ -1860,7 +1861,7 @@ figcaption {
 }
 
 .layout410_card.card-1 {
-  background-color: var(--base-color-neutral--white);
+  background-color: var(--background-color--background-secondary);
   color: var(--text-color--text-primary);
   border-style: none;
   border-radius: 1.5rem;
@@ -1870,7 +1871,7 @@ figcaption {
 
 .layout410_card.card-2 {
   border: 1.5px none var(--border-color--border-secondary);
-  background-color: var(--base-color-neutral--white);
+  background-color: var(--background-color--background-secondary);
   border-radius: 1.5rem;
   top: 18%;
   box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
@@ -1878,7 +1879,7 @@ figcaption {
 
 .layout410_card.card-3 {
   border: 1.5px none var(--border-color--border-secondary);
-  background-color: var(--base-color-neutral--white);
+  background-color: var(--background-color--background-secondary);
   border-radius: 1.5rem;
   top: 21%;
   box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
@@ -1941,7 +1942,7 @@ figcaption {
 
 .footer11_top-wrapper {
   grid-column-gap: 4vw;
-  background-color: var(--base-color-neutral--white);
+  background-color: var(--background-color--background-secondary);
   border-radius: 1.5rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr .5fr;
@@ -1964,7 +1965,7 @@ figcaption {
 }
 
 .footer11_link:hover {
-  color: var(--link-color--link-primary);
+  color: var(--link-color--link-secondary);
 }
 
 .footer11_legal-list {
@@ -2028,7 +2029,7 @@ figcaption {
 }
 
 .link:hover {
-  color: var(--base-color-neutral--neutral-light);
+  color: var(--link-color--link-secondary);
 }
 
 .lottie-animation {
@@ -2819,6 +2820,7 @@ figcaption {
 .gallery2_image {
   aspect-ratio: auto;
   object-fit: cover;
+  border-radius: 1.5rem;
   width: 100%;
   height: 100%;
   overflow: clip;
@@ -2961,7 +2963,7 @@ figcaption {
 
 .portfolio13_item {
   border: 2px none var(--border-color--border-secondary);
-  background-color: var(--base-color-neutral--white);
+  background-color: var(--background-color--background-secondary);
   border-radius: 1.5rem;
   box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d, 0 5.1px 10.9px #00000020;
 }
@@ -3260,14 +3262,14 @@ figcaption {
 
 .contact-form-input-style {
   border: 1px solid var(--border-color--border-primary);
-  background-color: var(--background-color--see-through-background-alternate);
+  background-color: var(--background-color--background-primary);
   border-radius: .5rem;
   margin-bottom: 40px;
 }
 
 .contact-form-input-style:focus {
-  border: 1px solid var(--border-color--border-secondary);
-  background-color: var(--background-color--see-through-background-secondary);
+  border: 1px solid var(--border-color--border-primary);
+  background-color: var(--background-color--see-through-background-alternate);
 }
 
 .success-message-2 {
@@ -3377,7 +3379,7 @@ figcaption {
 
 .timeline17_circle {
   z-index: 2;
-  background-color: var(--base-color-neutral--black);
+  background-color: var(--background-color--background-tertiary);
   box-shadow: 0 0 0 8px var(--background-color--background-primary);
   color: var(--link-color--link-primary);
   border-radius: 100%;
@@ -3387,9 +3389,13 @@ figcaption {
 }
 
 .timeline17_progress-line {
-  background-color: var(--base-color-neutral--black);
+  background-color: var(--background-color--background-tertiary);
   width: 100%;
   height: 3px;
+}
+
+.timeline17_progress-line.is-small-mobile {
+  background-color: var(--background-color--background-tertiary);
 }
 
 .timeline17_item {
@@ -3456,6 +3462,10 @@ figcaption {
   font-size: 3rem;
 }
 
+.heading-5.yellow {
+  color: var(--text-color--text-alternate);
+}
+
 .content13_image-2 {
   aspect-ratio: 16 / 9;
   object-fit: cover;
@@ -3481,6 +3491,7 @@ figcaption {
 .content8_image {
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  border-radius: 1.5rem;
   width: 100%;
   height: 100%;
 }
@@ -3647,7 +3658,7 @@ figcaption {
 }
 
 .navbar11_menu.is-page-height-tablet {
-  background-color: var(--base-color-neutral--neutral-lighter);
+  background-color: var(--background-color--background-secondary);
   border-radius: .7rem;
   margin-left: auto;
   margin-right: auto;
@@ -3668,12 +3679,12 @@ figcaption {
 
 .navbar11_link:hover {
   box-shadow: none;
-  color: var(--link-color--link-primary);
+  color: var(--link-color--link-secondary);
 }
 
 .navbar11_link.w--current {
-  background-color: var(--base-color-neutral--neutral-lightest);
-  color: var(--link-color--link-primary);
+  background-color: var(--background-color--background-primary);
+  color: var(--link-color--link-secondary);
   border-radius: .6rem;
   margin: .125rem;
   font-weight: 500;
@@ -3729,6 +3740,10 @@ figcaption {
   font-weight: 500;
 }
 
+.navbar11_menu-dropdown:hover {
+  color: var(--link-color--link-secondary);
+}
+
 .navbar11_container {
   justify-content: space-between;
   align-items: center;
@@ -3759,7 +3774,7 @@ figcaption {
 }
 
 .navbar11_dropdown-toggle:hover {
-  color: var(--link-color--link-primary);
+  color: var(--link-color--link-secondary);
 }
 
 .navbar11_component {
@@ -3774,7 +3789,7 @@ figcaption {
 }
 
 .navbar11_dropdown-list.w--open {
-  background-color: var(--base-color-neutral--neutral-lighter);
+  background-color: var(--background-color--background-secondary);
   border-radius: .5rem;
   margin-top: 1rem;
   padding: .35rem;
@@ -3817,7 +3832,8 @@ figcaption {
 }
 
 .navbar11_dropdown-link:hover {
-  background-color: var(--base-color-neutral--neutral-lightest);
+  background-color: var(--background-color--background-primary);
+  color: var(--link-color--link-secondary);
   border-radius: .5rem;
   padding: .5rem;
 }
@@ -3980,7 +3996,7 @@ figcaption {
 .layout380_card-medium {
   grid-column-gap: 0rem;
   grid-row-gap: 0rem;
-  background-color: #fff;
+  background-color: var(--background-color--background-secondary);
   border-radius: 1.5rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
@@ -3988,7 +4004,7 @@ figcaption {
   align-items: stretch;
   display: grid;
   overflow: hidden;
-  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d, 0 5.1px 10.9px #00000020;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .layout380_card-large-content {
@@ -4000,7 +4016,7 @@ figcaption {
 }
 
 .layout380_card-large {
-  background-color: #fff;
+  background-color: var(--background-color--background-secondary);
   border-radius: 1.5rem;
   flex-direction: column;
   grid-template-rows: auto;
@@ -4062,7 +4078,7 @@ figcaption {
 }
 
 .layout380_card-small {
-  background-color: #fff;
+  background-color: var(--background-color--background-secondary);
   border-radius: 1.5rem;
   flex-direction: column;
   grid-template-rows: auto;
@@ -4099,6 +4115,10 @@ figcaption {
   border-radius: 1.5rem;
   margin: 1rem auto;
   display: block;
+}
+
+.heading-7, .heading-8, .heading-9, .heading-10 {
+  color: var(--text-color--text-alternate);
 }
 
 @media screen and (max-width: 991px) {
