@@ -1,7 +1,7 @@
 :root {
   --background-color--background-primary: #111;
-  --text-color--text-primary: #a1a1a1;
-  --link-color--link-primary: #a1a1a1;
+  --text-color--text-primary: #eee;
+  --link-color--link-primary: #eee;
   --border-color--border-primary: #c473fb;
   --background-color--see-through-background-secondary: #c473fb0d;
   --text-color--text-secondary: #e1e1e1;
@@ -33,7 +33,7 @@
   --base-color-neutral--neutral-darkest: #111;
   --base-color-system--success-green: #4ddda1;
   --base-color-system--error-red: #eb4b3f;
-  --border-color--border-alternate: #a1a1a1;
+  --border-color--border-alternate: #eee;
 }
 
 .w-layout-grid {
