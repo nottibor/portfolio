@@ -1869,7 +1869,6 @@ figcaption {
   border-style: none;
   border-radius: 1.5rem;
   top: 15%;
-  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .layout410_card.card-2 {
@@ -1956,7 +1955,6 @@ figcaption {
 
 .footer11_credit-text {
   font-size: .875rem;
-  text-decoration: none;
 }
 
 .footer11_link {
@@ -3267,7 +3265,7 @@ figcaption {
 
 .contact-form-input-style {
   border: 1px solid var(--border-color--border-primary);
-  background-color: var(--background-color--background-primary);
+  background-color: var(--background-color--see-through-background-secondary);
   color: var(--text-color--text-primary);
   border-radius: .5rem;
   margin-bottom: 40px;
@@ -3494,6 +3492,8 @@ figcaption {
 }
 
 .content8_image-wrapper {
+  background-color: var(--background-color--background-secondary);
+  border-radius: 1.5rem;
   flex: 1;
   width: 100%;
 }
