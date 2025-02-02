@@ -1,29 +1,32 @@
 :root {
-  --background-color--background-primary: #111;
-  --text-color--text-primary: #eee;
-  --link-color--link-primary: #eee;
-  --border-color--border-primary: #c473fb;
-  --background-color--see-through-background-secondary: #c473fb0d;
-  --text-color--text-secondary: #e1e1e1;
-  --border-color--border-secondary: #202020;
-  --background-color--see-through-background-alternate: #c473fb33;
+  --background-color--background-primary: #f6efdf;
+  --text-color--text-primary: #27265a;
+  --link-color--link-primary: #27265a;
+  --border-color--border-primary: #907737;
+  --background-color--blue-mariner: #385ed5;
+  --base-color-neutral--neutral-lighter: #cfcfcf;
+  --text-color--text-grey-light-neutral: #eee;
+  --border-color--border-secondary: #e1e1e1;
+  --text-color--text-secondary: #907737;
+  --background-color--see-through-background-alternate: #d5c18f33;
   --base-color-neutral--white: white;
   --base-color-neutral--black: black;
-  --background-color--background-secondary: #202020;
-  --text-color--text-alternate: #c473fb;
-  --link-color--link-secondary: #c473fb;
+  --background-color--background-secondary: #f0e6d1;
+  --text-color--text-alternate: #385ed5;
+  --background-color--see-through-background-secondary: #d5c18f0d;
+  --link-color--link-secondary: #385ed5;
   --black-archive\<deleted\|variable-dccb7db6\>: black;
   --background-color--background-alternate: #838383;
   --link-color--link-alternate: #e1e1e1;
-  --background-color--background-tertiary: #c473fb;
+  --background-color--background-tertiary: #d5c18f;
   --base-color-system--success-green: #1ad386;
   --text-color--text-success: #1ad386;
   --base-color-system--error-red: #eb4b3f;
   --text-color--text-error: #eb4b3f;
   --background-color--see-through-red-error: #eb4b3f26;
   --base-color-neutral--neutral-lightest: #eee;
-  --base-color-neutral--neutral-lighter: #cfcfcf;
   --background-color--see-through-green: #1ad3861a;
+  --border-color--border-alternate: #385ed5;
   --base-color-brand--black: black;
   --base-color-brand--white: white;
   --base-color-neutral--neutral-light: #e1e1e1;
@@ -35,7 +38,6 @@
   --base-color-system--error-red-light: #fef3f2;
   --background-color--background-success: #ecfdf3;
   --background-color--background-error: #fef3f2;
-  --border-color--border-alternate: #eee;
 }
 
 .w-layout-grid {
@@ -752,16 +754,18 @@ figcaption {
 }
 
 .button {
-  background-color: var(--background-color--see-through-background-secondary);
-  color: var(--text-color--text-secondary);
+  background-color: var(--background-color--blue-mariner);
+  box-shadow: inset 0 2px 5px 0 var(--base-color-neutral--neutral-lighter);
+  color: var(--text-color--text-grey-light-neutral);
   text-align: center;
-  border-radius: .7rem;
+  border-radius: .5rem;
   padding: .5rem 1.25rem;
   text-decoration: none;
 }
 
 .button:hover {
-  background-color: var(--border-color--border-primary);
+  background-color: var(--background-color--blue-mariner);
+  box-shadow: none;
 }
 
 .button.is-link {
@@ -875,6 +879,7 @@ figcaption {
 .button.is-link.is-icon {
   grid-column-gap: .5rem;
   grid-row-gap: .5rem;
+  box-shadow: none;
   color: var(--link-color--link-primary);
 }
 
@@ -2967,7 +2972,7 @@ figcaption {
   border: 2px none var(--border-color--border-secondary);
   background-color: var(--background-color--background-secondary);
   border-radius: 1.5rem;
-  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d, 0 5.1px 10.9px #00000020;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .portfolio13_image-wrapper {
@@ -3264,16 +3269,17 @@ figcaption {
 }
 
 .contact-form-input-style {
-  border: 1px solid var(--border-color--border-primary);
+  border: .5px solid var(--border-color--border-primary);
   background-color: var(--background-color--see-through-background-secondary);
   color: var(--text-color--text-primary);
   border-radius: .5rem;
   margin-bottom: 40px;
   padding: .5rem;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .contact-form-input-style:focus {
-  border: 1px solid var(--border-color--border-primary);
+  border: 1.5px solid var(--border-color--border-alternate);
   background-color: var(--background-color--see-through-background-alternate);
   color: var(--text-color--text-primary);
 }
@@ -3391,7 +3397,7 @@ figcaption {
 
 .timeline17_circle {
   z-index: 2;
-  background-color: var(--background-color--background-tertiary);
+  background-color: var(--border-color--border-primary);
   box-shadow: 0 0 0 8px var(--background-color--background-primary);
   color: var(--link-color--link-primary);
   border-radius: 100%;
@@ -3401,13 +3407,13 @@ figcaption {
 }
 
 .timeline17_progress-line {
-  background-color: var(--background-color--background-tertiary);
+  background-color: var(--border-color--border-primary);
   width: 100%;
   height: 3px;
 }
 
 .timeline17_progress-line.is-small-mobile {
-  background-color: var(--background-color--background-tertiary);
+  background-color: var(--border-color--border-primary);
 }
 
 .timeline17_item {
@@ -3672,7 +3678,7 @@ figcaption {
   border-radius: .7rem;
   margin-left: auto;
   margin-right: auto;
-  padding: .125rem;
+  padding: .25rem;
 }
 
 .navbar11_icon-wrapper {
@@ -3698,7 +3704,7 @@ figcaption {
   border-radius: .6rem;
   margin: .125rem;
   font-weight: 500;
-  box-shadow: 0 1px 6px -1px #0003;
+  box-shadow: 0 1px 7px -1px #0003;
 }
 
 .icon-embed-xsmall-5 {
@@ -4206,12 +4212,13 @@ figcaption {
   padding: 3rem;
   display: grid;
   overflow: hidden;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .portfolio23_image {
   aspect-ratio: 3 / 2;
   object-fit: cover;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   width: 100%;
 }
 
@@ -4233,6 +4240,14 @@ figcaption {
 
 .text-align-center-4 {
   text-align: center;
+}
+
+.container {
+  margin-left: auto;
+}
+
+.container.available-to-work {
+  margin-left: 0;
 }
 
 @media screen and (max-width: 991px) {
