@@ -4212,7 +4212,7 @@ figcaption {
   padding: 3rem;
   display: grid;
   overflow: hidden;
-  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 6px #0000001d;
 }
 
 .portfolio23_image {
