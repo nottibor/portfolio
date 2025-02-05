@@ -760,6 +760,7 @@ figcaption {
   text-align: center;
   border-radius: .5rem;
   padding: .5rem 1.25rem;
+  font-size: .9rem;
   text-decoration: none;
 }
 
@@ -3269,13 +3270,12 @@ figcaption {
 }
 
 .contact-form-input-style {
+  border: 1px solid var(--border-color--border-primary);
   background-color: var(--background-color--background-secondary);
   color: var(--text-color--text-primary);
-  border: 1px #000;
   border-radius: .5rem;
   margin-bottom: 40px;
   padding: .5rem;
-  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .contact-form-input-style:focus {
@@ -4212,7 +4212,7 @@ figcaption {
   padding: 3rem;
   display: grid;
   overflow: hidden;
-  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 3px #0000001d;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a;
 }
 
 .portfolio23_image {
