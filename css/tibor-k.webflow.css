@@ -4187,7 +4187,8 @@ figcaption {
 
 .portfolio23_content-left {
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
   display: flex;
 }
 
