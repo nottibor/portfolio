@@ -1956,7 +1956,7 @@ figcaption {
   grid-template-columns: 1fr .5fr;
   align-items: start;
   padding: 3rem;
-  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .5px 1px #0000001d;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a;
 }
 
 .footer11_credit-text {
