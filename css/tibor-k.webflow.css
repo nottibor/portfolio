@@ -1,23 +1,23 @@
 :root {
-  --background-color--background-primary: #f6efdf;
-  --text-color--text-primary: #27265a;
-  --link-color--link-primary: #27265a;
-  --border-color--border-primary: #907737;
+  --background-color--background-primary: #020717;
+  --text-color--text-primary: #f6efdf;
+  --link-color--link-primary: #eee;
+  --border-color--border-primary: #385ed5;
   --background-color--blue-mariner: #385ed5;
-  --base-color-neutral--neutral-lighter: #cfcfcf;
+  --base-color-neutral--white-see-through: #ffffff80;
   --text-color--text-grey-light-neutral: #eee;
-  --border-color--border-secondary: #e1e1e1;
+  --border-color--border-secondary: #f6efdf;
   --text-color--text-secondary: #907737;
   --background-color--see-through-background-alternate: #d5c18f33;
   --base-color-neutral--white: white;
   --base-color-neutral--black: black;
-  --background-color--background-secondary: #f0e6d1;
+  --background-color--background-secondary: #102150;
   --text-color--text-alternate: #385ed5;
   --background-color--see-through-background-secondary: #d5c18f0d;
   --link-color--link-secondary: #385ed5;
   --black-archive\<deleted\|variable-dccb7db6\>: black;
   --background-color--background-alternate: #838383;
-  --link-color--link-alternate: #e1e1e1;
+  --link-color--link-alternate: #27265a;
   --background-color--background-tertiary: #d5c18f;
   --base-color-system--success-green: #1ad386;
   --text-color--text-success: #1ad386;
@@ -25,8 +25,9 @@
   --text-color--text-error: #eb4b3f;
   --background-color--see-through-red-error: #eb4b3f26;
   --base-color-neutral--neutral-lightest: #eee;
+  --base-color-neutral--neutral-lighter: #cfcfcf;
   --background-color--see-through-green: #1ad3861a;
-  --border-color--border-alternate: #385ed5;
+  --border-color--border-alternate: #d5c18f;
   --base-color-brand--black: black;
   --base-color-brand--white: white;
   --base-color-neutral--neutral-light: #e1e1e1;
@@ -755,7 +756,7 @@ figcaption {
 
 .button {
   background-color: var(--background-color--blue-mariner);
-  box-shadow: inset 0 1px 3px 0 var(--base-color-neutral--neutral-lighter);
+  box-shadow: inset 0 3px 9px 0 var(--base-color-neutral--white-see-through);
   color: var(--text-color--text-grey-light-neutral);
   text-align: center;
   border-radius: .5rem;
@@ -3270,7 +3271,7 @@ figcaption {
 }
 
 .contact-form-input-style {
-  border: 1.5px solid var(--border-color--border-alternate);
+  border: 1.5px solid var(--border-color--border-primary);
   color: var(--text-color--text-primary);
   background-color: #0000;
   border-radius: .5rem;
@@ -3279,7 +3280,7 @@ figcaption {
 }
 
 .contact-form-input-style:focus {
-  border: 2.5px solid var(--border-color--border-alternate);
+  border: 2.5px solid var(--border-color--border-secondary);
   color: var(--text-color--text-primary);
 }
 
@@ -4286,6 +4287,8 @@ figcaption {
 .logo1_list {
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
+  background-color: var(--base-color-neutral--neutral-lightest);
+  border-radius: 1.5rem;
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
@@ -4347,6 +4350,7 @@ figcaption {
 .timeline6_fade-overlay-top {
   z-index: 1;
   background-image: linear-gradient(180deg, var(--background-color--background-primary), #0000);
+  color: var(--border-color--border-primary);
   width: 4px;
   height: 4rem;
   position: absolute;
@@ -4363,7 +4367,7 @@ figcaption {
 
 .timeline6_circle {
   z-index: 2;
-  background-color: var(--border-color--border-alternate);
+  background-color: var(--border-color--border-primary);
   box-shadow: 0 0 0 8px var(--background-color--background-primary);
   border-radius: 100%;
   justify-content: center;
@@ -4398,7 +4402,7 @@ figcaption {
 
 .timeline6_progress-line {
   z-index: 0;
-  background-color: var(--border-color--border-alternate);
+  background-color: var(--border-color--border-primary);
   width: 3px;
   height: 50vh;
   margin-top: -50vh;
@@ -4430,6 +4434,22 @@ figcaption {
 
 .timeline1_instructions-list {
   padding-left: 1.25rem;
+}
+
+.image-about-me-container {
+  margin-top: 2rem;
+}
+
+.about-me-image {
+  border: 2px none var(--border-color--border-primary);
+  background-color: var(--base-color-neutral--white-see-through);
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+.image-description-container {
+  margin-top: .5rem;
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 991px) {
@@ -7722,12 +7742,6 @@ figcaption {
 @media screen and (max-width: 991px) {
   #w-node-_020bceb7-2ade-ef11-021d-f0b05c6b9cbe-1ffdf3e7 {
     order: -9999;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #w-node-b63c9de4-5922-2fca-eef6-73b4fe74a550-5b000b27 {
-    grid-area: 2 / 1 / 3 / 2;
   }
 }
 
