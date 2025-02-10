@@ -1,29 +1,29 @@
 :root {
-  --background-color--background-primary: #020717;
-  --text-color--text-primary: #f6efdf;
-  --link-color--link-primary: #eee;
+  --background-color--background-primary: #eee;
+  --text-color--text-primary: #102150;
+  --link-color--link-primary: #262626;
   --border-color--border-primary: #385ed5;
   --background-color--blue-mariner: #385ed5;
   --base-color-neutral--white-see-through: #ffffff80;
   --text-color--text-grey-light-neutral: #eee;
   --border-color--border-secondary: #f6efdf;
-  --text-color--text-secondary: #907737;
+  --text-color--text-secondary: #385ed5;
   --background-color--see-through-background-alternate: #d5c18f33;
   --base-color-neutral--white: white;
   --base-color-neutral--black: black;
-  --background-color--background-secondary: #102150;
-  --text-color--text-alternate: #385ed5;
-  --background-color--see-through-background-secondary: #d5c18f0d;
+  --background-color--background-secondary: #e2e2e2;
+  --text-color--text-alternate: #907737;
+  --background-color--see-through-background-secondary: #385ed526;
   --link-color--link-secondary: #385ed5;
   --black-archive\<deleted\|variable-dccb7db6\>: black;
   --background-color--background-alternate: #838383;
-  --link-color--link-alternate: #27265a;
-  --background-color--background-tertiary: #d5c18f;
-  --base-color-system--success-green: #1ad386;
-  --text-color--text-success: #1ad386;
-  --base-color-system--error-red: #eb4b3f;
-  --text-color--text-error: #eb4b3f;
-  --background-color--see-through-red-error: #eb4b3f26;
+  --link-color--link-alternate: #907737;
+  --background-color--background-tertiary: #dae4ff;
+  --base-color-system--success-green: #4f9f52;
+  --text-color--text-success: #4f9f52;
+  --base-color-system--error-red: #c83532;
+  --text-color--text-error: #c83532;
+  --background-color--see-through-red-error: #c835321a;
   --base-color-neutral--neutral-lightest: #eee;
   --base-color-neutral--neutral-lighter: #cfcfcf;
   --background-color--see-through-green: #1ad3861a;
@@ -3280,7 +3280,7 @@ figcaption {
 }
 
 .contact-form-input-style:focus {
-  border: 2.5px solid var(--border-color--border-secondary);
+  border: 3px solid var(--border-color--border-primary);
   color: var(--text-color--text-primary);
 }
 
@@ -3292,6 +3292,7 @@ figcaption {
   border: 1.5px solid var(--base-color-system--success-green);
   background-color: var(--background-color--see-through-green);
   color: var(--text-color--text-success);
+  border-radius: 0;
   font-weight: 500;
 }
 
@@ -4287,7 +4288,6 @@ figcaption {
 .logo1_list {
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
-  background-color: var(--base-color-neutral--neutral-lightest);
   border-radius: 1.5rem;
   flex-flow: wrap;
   justify-content: center;
@@ -4450,6 +4450,11 @@ figcaption {
 .image-description-container {
   margin-top: .5rem;
   margin-bottom: 0;
+}
+
+.image-description-text-paragraph {
+  font-size: .8rem;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 991px) {
