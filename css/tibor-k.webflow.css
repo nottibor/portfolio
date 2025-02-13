@@ -2481,7 +2481,7 @@ figcaption {
 }
 
 .body-3, .body-4 {
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: IBM Plex Mono;
 }
 
 .tools-used {
@@ -7747,6 +7747,12 @@ figcaption {
 @media screen and (max-width: 991px) {
   #w-node-_020bceb7-2ade-ef11-021d-f0b05c6b9cbe-1ffdf3e7 {
     order: -9999;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #w-node-b63c9de4-5922-2fca-eef6-73b4fe74a550-5b000b27 {
+    grid-area: 2 / 1 / 3 / 2;
   }
 }
 
