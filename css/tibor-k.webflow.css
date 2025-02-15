@@ -2,6 +2,7 @@
   --background-color--background-primary: #eee;
   --text-color--text-primary: #102150;
   --link-color--link-primary: #262626;
+  --base-color-neutral--white: white;
   --border-color--border-primary: #385ed5;
   --background-color--blue-mariner: #385ed5;
   --base-color-neutral--white-see-through: #ffffff80;
@@ -9,7 +10,6 @@
   --border-color--border-secondary: #f6efdf;
   --text-color--text-secondary: #385ed5;
   --background-color--see-through-background-alternate: #d5c18f33;
-  --base-color-neutral--white: white;
   --base-color-neutral--black: black;
   --background-color--background-secondary: #e2e2e2;
   --text-color--text-alternate: #907737;
@@ -601,6 +601,7 @@ figcaption {
 }
 
 .icon-embed-small {
+  color: var(--base-color-neutral--white);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -4457,6 +4458,30 @@ figcaption {
   font-weight: 300;
 }
 
+.banner5_wrapper {
+  background-color: var(--background-color--blue-mariner);
+  color: var(--text-color--text-grey-light-neutral);
+  border-radius: .7rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding: .5rem 1rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner5_content {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+  display: flex;
+}
+
+.banner5_close-button {
+  margin-left: 1rem;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 3.25rem;
@@ -6058,6 +6083,21 @@ figcaption {
     grid-template-columns: 4rem 1fr;
     margin-left: 1rem;
     padding: 1.5rem;
+  }
+
+  .banner5_wrapper {
+    padding-right: .5rem;
+  }
+
+  .banner5_content {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  .banner5_close-button {
+    margin-left: 0;
   }
 }
 
