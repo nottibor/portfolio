@@ -13,7 +13,7 @@
   --base-color-neutral--black: black;
   --background-color--background-secondary: #18181b;
   --text-color--text-alternate: #907737;
-  --background-color--see-through-background-secondary: #385ed526;
+  --background-color--see-through-background-secondary: #385ed51a;
   --link-color--link-secondary: #385ed5;
   --black-archive\<deleted\|variable-dccb7db6\>: black;
   --background-color--background-alternate: #838383;
@@ -30,6 +30,7 @@
   --base-color-neutral--neutral-dark: #444;
   --base-color-neutral--neutral-darkest: #111;
   --border-color--border-alternate: #d5c18f;
+  --background-color--blue-see-through-25: #385ed559;
   --base-color-neutral--neutral-darker: #222;
   --base-color-brand--black: black;
   --base-color-brand--white: white;
@@ -3272,7 +3273,7 @@ figcaption {
 }
 
 .contact-form-input-style {
-  border: 1.5px solid var(--border-color--border-primary);
+  border: 1px solid var(--base-color-neutral--neutral-dark);
   color: var(--text-color--text-primary);
   background-color: #0000;
   border-radius: .5rem;
@@ -3281,7 +3282,7 @@ figcaption {
 }
 
 .contact-form-input-style:focus {
-  border: 3px solid var(--border-color--border-primary);
+  border: 2px solid var(--border-color--border-primary);
   color: var(--text-color--text-primary);
 }
 
@@ -3676,6 +3677,8 @@ figcaption {
 }
 
 .navbar11_menu.is-page-height-tablet {
+  grid-column-gap: 0rem;
+  grid-row-gap: 0rem;
   background-color: var(--background-color--background-secondary);
   border-radius: .7rem;
   margin-left: auto;
@@ -4482,6 +4485,10 @@ figcaption {
   text-decoration: none;
 }
 
+.banner5_wrapper.butiga-agency-special:hover {
+  background-color: var(--background-color--blue-see-through-25);
+}
+
 .banner5_content {
   flex: 1;
   justify-content: center;
@@ -4556,6 +4563,10 @@ figcaption {
 .special-header-text {
   font-size: 2rem;
   font-weight: 700;
+}
+
+.text-block-2 {
+  text-align: left;
 }
 
 @media screen and (max-width: 991px) {
