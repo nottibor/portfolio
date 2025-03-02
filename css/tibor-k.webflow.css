@@ -3680,7 +3680,6 @@ figcaption {
 .navbar11_menu.is-page-height-tablet {
   grid-column-gap: 0rem;
   grid-row-gap: 0rem;
-  background-color: var(--background-color--background-secondary);
   border-radius: .7rem;
   margin-left: auto;
   margin-right: auto;
@@ -3705,12 +3704,13 @@ figcaption {
 }
 
 .navbar11_link.w--current {
-  background-color: var(--background-color--background-primary);
+  border: 1px solid var(--base-color-neutral--neutral-dark);
+  background-color: var(--base-color-neutral--neutral-darker);
+  box-shadow: inset 0 0 2px 0 var(--base-color-neutral--neutral);
   color: var(--text-color--text-primary);
-  border-radius: .6rem;
+  border-radius: 1.5rem;
   margin: .125rem;
   font-weight: 300;
-  box-shadow: 0 1px 7px -1px #0003;
 }
 
 .icon-embed-xsmall-5 {
