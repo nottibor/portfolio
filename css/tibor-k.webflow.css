@@ -1,25 +1,23 @@
 :root {
-  --background-color--background-primary: #000;
-  --text-color--text-primary: #e2e2e2;
-  --link-color--link-primary: #f6efdf;
-  --base-color-neutral--white: white;
+  --background-color--background-primary: #f3f3f3;
+  --text-color--text-primary: #222;
+  --link-color--link-primary: #385ed5;
+  --background-color--blue-mariner: #385ed5;
   --border-color--border-primary: #385ed5;
-  --base-color-neutral--neutral-dark: #444;
-  --base-color-neutral--neutral-darker: #222;
-  --base-color-neutral--neutral: #666;
+  --base-color-neutral--white: white;
   --text-color--text-grey-light-neutral: #eee;
-  --base-color-neutral--neutral-darkest: #111;
+  --background-color--blue-mariner-darker: #2551dd;
   --border-color--border-secondary: #f6efdf;
   --text-color--text-secondary: #385ed5;
   --background-color--see-through-background-alternate: #d5c18f33;
   --base-color-neutral--black: black;
-  --background-color--background-secondary: #18181b;
+  --background-color--background-secondary: #e2e2e2;
   --text-color--text-alternate: #907737;
   --background-color--see-through-background-secondary: #385ed51a;
-  --link-color--link-secondary: #385ed5;
+  --link-color--link-secondary: #907737;
   --black-archive\<deleted\|variable-dccb7db6\>: black;
   --background-color--background-alternate: #838383;
-  --link-color--link-alternate: #907737;
+  --link-color--link-alternate: #d5c18f;
   --background-color--background-tertiary: #dae4ff;
   --base-color-system--success-green: #4f9f52;
   --text-color--text-success: #4f9f52;
@@ -27,11 +25,14 @@
   --text-color--text-error: #c83532;
   --background-color--see-through-red-error: #c835321a;
   --base-color-neutral--neutral-lightest: #eee;
-  --base-color-neutral--neutral-lighter: #cfcfcf;
+  --base-color-neutral--neutral-lighter: #dfdfdf;
   --background-color--see-through-green: #1ad3861a;
   --border-color--border-alternate: #d5c18f;
   --base-color-neutral--white-see-through: #ffffff80;
   --background-color--blue-see-through-25: #385ed559;
+  --base-color-neutral--neutral-dark: #444;
+  --base-color-neutral--neutral: #797979;
+  --base-color-neutral--neutral-darkest: #111;
   --elements-webflow-library--accent--primary-1: #4a3aff;
   --elements-webflow-library--neutral--800: #211f54;
   --elements-webflow-library--neutral--600: #6e7191;
@@ -41,11 +42,11 @@
   --base-color-brand--black: black;
   --base-color-brand--white: white;
   --base-color-neutral--neutral-light: #e1e1e1;
+  --base-color-neutral--neutral-darker: #222;
   --base-color-system--success-green-light: #ecfdf3;
   --base-color-system--error-red-light: #fef3f2;
   --background-color--background-success: #ecfdf3;
   --background-color--background-error: #fef3f2;
-  --background-color--blue-mariner: #385ed5;
 }
 
 .w-layout-grid {
@@ -608,7 +609,7 @@ figcaption {
 }
 
 .icon-embed-small {
-  color: var(--base-color-neutral--white);
+  color: var(--background-color--blue-mariner);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -763,9 +764,9 @@ figcaption {
 }
 
 .button {
-  border: 1px solid var(--base-color-neutral--neutral-dark);
-  background-color: var(--base-color-neutral--neutral-darker);
-  box-shadow: inset 0 0 2px 0 var(--base-color-neutral--neutral);
+  border: 1.5px solid var(--border-color--border-primary);
+  background-color: var(--background-color--blue-mariner);
+  box-shadow: inset 0 0 4px 0 var(--base-color-neutral--white);
   color: var(--text-color--text-grey-light-neutral);
   text-align: center;
   border-radius: 1.5rem;
@@ -775,7 +776,12 @@ figcaption {
 }
 
 .button:hover {
-  background-color: var(--base-color-neutral--neutral-darkest);
+  background-color: var(--background-color--blue-mariner-darker);
+  color: var(--text-color--text-grey-light-neutral);
+}
+
+.button.w--current {
+  color: var(--text-color--text-grey-light-neutral);
 }
 
 .button.is-link {
@@ -916,6 +922,10 @@ figcaption {
 .button.link:hover {
   background-color: var(--background-color--see-through-background-alternate);
   color: var(--link-color--link-secondary);
+}
+
+.button.pill-shape-inside-a-box {
+  border-bottom-right-radius: 0;
 }
 
 .text-weight-normal {
@@ -2979,8 +2989,8 @@ figcaption {
 }
 
 .portfolio13_item {
-  border: 1px solid var(--base-color-neutral--neutral-dark);
-  background-color: var(--background-color--background-secondary);
+  border: 1px solid var(--border-color--border-primary);
+  background-color: var(--base-color-neutral--neutral-lightest);
   border-radius: 1.5rem;
   box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
@@ -3266,7 +3276,7 @@ figcaption {
 }
 
 .form {
-  border: 1px solid var(--base-color-neutral--neutral-darker);
+  border: 1px solid var(--border-color--border-primary);
   color: var(--text-color--text-primary);
   border-radius: 1.5rem;
   max-width: 50%;
@@ -3280,8 +3290,8 @@ figcaption {
 }
 
 .contact-form-input-style {
-  border: 1px solid var(--base-color-neutral--neutral-dark);
-  background-color: var(--base-color-neutral--neutral-darkest);
+  border: 1px solid var(--border-color--border-primary);
+  background-color: var(--background-color--background-primary);
   color: var(--text-color--text-primary);
   border-radius: .5rem;
   margin-bottom: 40px;
@@ -3707,14 +3717,14 @@ figcaption {
 
 .navbar11_link:hover {
   box-shadow: none;
-  color: var(--link-color--link-secondary);
+  color: var(--link-color--link-primary);
 }
 
 .navbar11_link.w--current {
-  border: 1px solid var(--base-color-neutral--neutral-dark);
-  background-color: var(--base-color-neutral--neutral-darker);
-  box-shadow: inset 0 0 2px 0 var(--base-color-neutral--neutral);
-  color: var(--text-color--text-primary);
+  border: 1.5px solid var(--border-color--border-primary);
+  background-color: var(--background-color--blue-mariner);
+  box-shadow: inset 0 0 4px 0 var(--base-color-neutral--white);
+  color: var(--text-color--text-grey-light-neutral);
   border-radius: 1.5rem;
   margin: .125rem;
   font-weight: 300;
@@ -4217,8 +4227,8 @@ figcaption {
 .portfolio23_item {
   grid-column-gap: 4rem;
   grid-row-gap: 4rem;
-  border: 1px solid var(--base-color-neutral--neutral-dark);
-  background-color: var(--base-color-neutral--neutral-darkest);
+  border: 1px solid var(--border-color--border-primary);
+  background-color: var(--background-color--background-primary);
   border-radius: 1.5rem;
   flex-flow: column;
   grid-template-rows: auto;
@@ -4474,7 +4484,7 @@ figcaption {
 .banner5_wrapper {
   border: 1px solid var(--border-color--border-primary);
   background-color: var(--background-color--see-through-background-secondary);
-  color: var(--text-color--text-grey-light-neutral);
+  color: var(--text-color--text-secondary);
   border-radius: 1.5rem;
   justify-content: flex-start;
   align-items: center;
@@ -4482,10 +4492,6 @@ figcaption {
   display: flex;
   position: relative;
   overflow: hidden;
-}
-
-.banner5_wrapper:hover {
-  background-color: var(--background-color--blue-see-through-25);
 }
 
 .banner5_wrapper.butiga-agency-special {
@@ -4536,15 +4542,15 @@ figcaption {
 }
 
 .faq7_item.left {
-  border: 1px solid var(--base-color-neutral--neutral-dark);
-  background-color: var(--base-color-neutral--neutral-darker);
+  border: 1px solid var(--border-color--border-primary);
+  background-color: var(--base-color-neutral--white);
   border-radius: 2rem 2rem 2rem 0;
   padding: 1rem;
 }
 
 .faq7_item.right {
-  border: 1px solid var(--base-color-neutral--neutral-darker);
-  background-color: var(--base-color-neutral--neutral-darkest);
+  border: 1px solid var(--border-color--border-primary);
+  background-color: var(--base-color-neutral--white);
   border-radius: 2rem 2rem 0;
   max-width: 34rem;
   padding: 1rem;
@@ -4552,8 +4558,9 @@ figcaption {
 
 .link-text-box {
   border: 1px solid var(--base-color-neutral--neutral-dark);
-  background-color: var(--base-color-neutral--neutral-darker);
-  box-shadow: inset 0 0 2px 0 var(--base-color-neutral--neutral);
+  background-color: var(--base-color-neutral--white);
+  box-shadow: inset 0 0 4px 0 var(--base-color-neutral--neutral);
+  color: var(--link-color--link-primary);
   border-radius: 1.5rem 1.5rem 0;
   padding: .5rem;
   text-decoration: none;
