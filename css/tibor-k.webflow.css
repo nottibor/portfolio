@@ -766,10 +766,10 @@ figcaption {
 .button {
   border: 1.5px solid var(--border-color--border-primary);
   background-color: var(--background-color--blue-mariner);
-  box-shadow: inset 0 0 4px 0 var(--base-color-neutral--white);
+  box-shadow: inset 0 0 6px .5px var(--base-color-neutral--white);
   color: var(--text-color--text-grey-light-neutral);
   text-align: center;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   padding: .5rem 1rem;
   font-size: .9rem;
   text-decoration: none;
@@ -4542,14 +4542,14 @@ figcaption {
 }
 
 .faq7_item.left {
-  border: 1px solid var(--border-color--border-primary);
+  border: 1.5px solid var(--border-color--border-primary);
   background-color: var(--base-color-neutral--white);
   border-radius: 2rem 2rem 2rem 0;
   padding: 1rem;
 }
 
 .faq7_item.right {
-  border: 1px solid var(--border-color--border-primary);
+  border: 1.5px solid var(--border-color--border-primary);
   background-color: var(--base-color-neutral--white);
   border-radius: 2rem 2rem 0;
   max-width: 34rem;
