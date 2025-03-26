@@ -4,12 +4,13 @@
   --link-color--link-primary: #385ed5;
   --background-color--blue-mariner: #385ed5;
   --border-color--border-primary: #385ed5;
-  --base-color-neutral--white: white;
+  --base-color-neutral--neutral-lighter: #dfdfdf;
   --text-color--text-grey-light-neutral: #eee;
   --background-color--blue-mariner-darker: #2551dd;
   --border-color--border-secondary: #f6efdf;
   --text-color--text-secondary: #385ed5;
   --background-color--see-through-background-alternate: #d5c18f33;
+  --base-color-neutral--white: white;
   --base-color-neutral--black: black;
   --background-color--background-secondary: #e2e2e2;
   --text-color--text-alternate: #907737;
@@ -25,7 +26,6 @@
   --text-color--text-error: #c83532;
   --background-color--see-through-red-error: #c835321a;
   --base-color-neutral--neutral-lightest: #eee;
-  --base-color-neutral--neutral-lighter: #dfdfdf;
   --background-color--see-through-green: #1ad3861a;
   --border-color--border-alternate: #d5c18f;
   --base-color-neutral--white-see-through: #ffffff80;
@@ -766,12 +766,13 @@ figcaption {
 .button {
   border: 1.5px solid var(--border-color--border-primary);
   background-color: var(--background-color--blue-mariner);
-  box-shadow: inset 0 0 6px .5px var(--base-color-neutral--white);
+  box-shadow: inset 0 0 8px 1px var(--base-color-neutral--neutral-lighter);
   color: var(--text-color--text-grey-light-neutral);
   text-align: center;
   border-radius: 1rem;
   padding: .5rem 1rem;
-  font-size: .9rem;
+  font-size: 1rem;
+  font-weight: 500;
   text-decoration: none;
 }
 
