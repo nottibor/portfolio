@@ -4284,7 +4284,7 @@ figcaption {
 
 .portfolio23_image {
   aspect-ratio: 3 / 2;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 1.5rem;
   width: 100%;
 }
@@ -4970,6 +4970,7 @@ figcaption {
 }
 
 .card-row39_card.blue {
+  border-color: var(--background-color--blue-mariner);
   background-color: var(--background-color--blue-5);
 }
 
