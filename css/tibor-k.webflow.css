@@ -1,22 +1,24 @@
 :root {
-  --background-color--background-primary: #f3f3f3;
+  --background-color--background-primary: transparent;
   --text-color--text-primary: #222;
   --link-color--link-primary: #385ed5;
   --background-color--blue-mariner: #385ed5;
   --border-color--border-primary: #2551dd;
-  --background-color--blue-mariner-darker: #2551dd;
+  --base-color-neutral--white-less-see-through: #ffffffa6;
+  --base-color-neutral--white: white;
   --text-color--text-grey-light-neutral: #eee;
   --border-color--border-secondary: #f6efdf;
   --text-color--text-secondary: #385ed5;
-  --background-color--see-through-background-alternate: #d5c18f0d;
-  --base-color-neutral--white: white;
+  --background-color--see-through-background-alternate: #d5c18f1a;
   --base-color-neutral--black: black;
   --background-color--background-secondary: #e2e2e2;
   --text-color--text-alternate: #907737;
-  --background-color--orange: #ef8a43;
+  --background-color--blue-mariner-darker: #2551dd;
+  --background-color--orange: #fd5f00;
   --background-color--pink-dribbble: #ea4c89;
   --background-color--blue-5: #385ed505;
   --link-color--link-secondary: #907737;
+  --base-color-neutral--white-see-through: #fff6;
   --black-archive\<deleted\|variable-dccb7db6\>: black;
   --background-color--background-alternate: #838383;
   --link-color--link-alternate: #d5c18f;
@@ -30,7 +32,6 @@
   --base-color-neutral--neutral-lighter: #dfdfdf;
   --background-color--see-through-green: #1ad3861a;
   --border-color--border-alternate: #d5c18f;
-  --base-color-neutral--white-see-through: #ffffff80;
   --background-color--blue-25: #385ed540;
   --base-color-neutral--neutral-dark: #444;
   --base-color-neutral--neutral: #797979;
@@ -771,19 +772,20 @@ figcaption {
 }
 
 .button {
-  background-color: var(--background-color--blue-mariner-darker);
-  color: var(--text-color--text-grey-light-neutral);
+  background-color: var(--base-color-neutral--white-less-see-through);
+  color: var(--text-color--text-primary);
   text-align: center;
   border-radius: .7rem;
   padding: .25rem .75rem;
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .button:hover {
-  background-color: var(--background-color--blue-mariner);
-  color: var(--text-color--text-grey-light-neutral);
+  background-color: var(--base-color-neutral--white);
+  color: var(--text-color--text-primary);
 }
 
 .button.w--current {
@@ -959,6 +961,16 @@ figcaption {
 
 .button.pill-shape-inside-a-box {
   border-bottom-right-radius: 0;
+}
+
+.button.form-send {
+  background-color: var(--base-color-neutral--white-see-through);
+  color: var(--text-color--text-primary);
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
+}
+
+.button.form-send:hover {
+  background-color: var(--base-color-neutral--white);
 }
 
 .text-weight-normal {
@@ -1882,7 +1894,10 @@ figcaption {
 }
 
 .body {
-  background-color: var(--background-color--background-primary);
+  background-image: url('../images/uriel-xtgONQzGgOE-unsplash.jpg');
+  background-position: 50%;
+  background-size: auto;
+  background-attachment: fixed;
   font-family: Nunito, sans-serif;
 }
 
@@ -3315,22 +3330,30 @@ figcaption {
 }
 
 .form {
-  border: 1px solid var(--border-color--border-primary);
+  background-color: var(--background-color--see-through-background-alternate);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   color: var(--text-color--text-primary);
   border-radius: 1.5rem;
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
   padding: 2rem;
+  font-weight: 500;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d, 0 5.1px 10.9px #00000020;
 }
 
 .body-5 {
+  background-image: url('../images/uriel-xtgONQzGgOE-unsplash.jpg');
+  background-position: 50% 80%;
+  background-size: auto;
+  background-attachment: fixed;
   font-family: Nunito, sans-serif;
 }
 
 .contact-form-input-style {
-  border: 1px solid var(--border-color--border-primary);
-  background-color: var(--background-color--background-primary);
+  border: 1px none var(--base-color-neutral--white);
+  background-color: var(--base-color-neutral--white-see-through);
   color: var(--text-color--text-primary);
   border-radius: .5rem;
   margin-bottom: 40px;
@@ -3339,7 +3362,9 @@ figcaption {
 }
 
 .contact-form-input-style:focus {
-  border: 2px solid var(--border-color--border-primary);
+  border-width: 2px;
+  border-color: var(--base-color-neutral--white);
+  background-color: var(--base-color-neutral--white);
   color: var(--text-color--text-primary);
 }
 
@@ -3858,8 +3883,7 @@ figcaption {
 }
 
 .navbar11_component {
-  border-bottom: 1px solid var(--background-color--background-primary);
-  background-color: var(--background-color--background-primary);
+  background-color: #0000;
   align-items: center;
   width: 100%;
   min-height: 6rem;
@@ -4268,8 +4292,9 @@ figcaption {
 .portfolio23_item {
   grid-column-gap: 4rem;
   grid-row-gap: 4rem;
-  border: 1px solid var(--border-color--border-primary);
-  background-color: var(--background-color--blue-5);
+  background-color: var(--base-color-neutral--white-see-through);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border-radius: 1.5rem;
   flex-flow: column;
   grid-template-rows: auto;
@@ -4280,10 +4305,11 @@ figcaption {
   padding: 3rem;
   display: grid;
   overflow: hidden;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d, 0 5.1px 10.9px #00000020;
 }
 
 .portfolio23_image {
-  aspect-ratio: 3 / 2;
+  aspect-ratio: auto;
   object-fit: fill;
   border-radius: 1.5rem;
   width: 100%;
@@ -4945,7 +4971,7 @@ figcaption {
   flex: 1;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
 }
 
@@ -4972,16 +4998,22 @@ figcaption {
 .card-row39_card.blue {
   border-color: var(--background-color--blue-mariner);
   background-color: var(--background-color--blue-5);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .card-row39_card.pink {
   border-color: var(--background-color--pink-dribbble);
   background-color: var(--background-color--pink-see-through);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .card-row39_card.yellow {
   border-color: var(--background-color--orange);
   background-color: var(--background-color--orange-10);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .paragraph.blue {
@@ -5039,6 +5071,14 @@ figcaption {
   height: 100%;
   text-decoration: none;
   display: flex;
+}
+
+.product2_item {
+  background-color: var(--base-color-neutral--white-see-through);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 1rem;
+  padding: .75rem;
 }
 
 .button-5 {
@@ -5103,6 +5143,21 @@ figcaption {
 
 .product2_heading {
   flex: 1;
+}
+
+.product2_heading.white-background {
+  background-color: var(--base-color-neutral--white-see-through);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+
+.body-8 {
+  background-image: url('../images/uriel-xtgONQzGgOE-unsplash.jpg');
+  background-position: 50% 80%;
+  background-size: auto;
+  background-attachment: fixed;
 }
 
 @media screen and (max-width: 991px) {
