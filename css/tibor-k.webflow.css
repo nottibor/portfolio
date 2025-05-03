@@ -16,7 +16,7 @@
   --background-color--blue-mariner-darker: #2551dd;
   --background-color--yellow: #ffe600;
   --background-color--pink-dribbble: #ea4c89;
-  --background-color--blue-5: #385ed50d;
+  --background-color--blue-5: #385ed514;
   --link-color--link-secondary: #907737;
   --base-color-neutral--white-see-through: #fff6;
   --black-archive\<deleted\|variable-dccb7db6\>: black;
@@ -42,8 +42,8 @@
   --elements-webflow-library--neutral--100: white;
   --elements-webflow-library--neutral--300: #eff0f6;
   --elements-webflow-library--general--shadow-01: #14142b0f;
-  --background-color--pink-see-through: #ea4c891a;
-  --background-color--yellov-10-opacity: #ffe6000d;
+  --background-color--pink-see-through: #ea4c8914;
+  --background-color--yellov-10-opacity: #ffe60014;
   --background-color--orange: #fd5f00;
   --base-color-brand--black: black;
   --base-color-brand--white: white;
@@ -725,7 +725,7 @@ figcaption {
 }
 
 .heading-style-h1 {
-  font-family: Montserrat, sans-serif;
+  font-family: Nunito, sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -3331,7 +3331,7 @@ figcaption {
 }
 
 .form {
-  background-color: var(--background-color--see-through-background-alternate);
+  background-color: var(--base-color-neutral--white-see-through);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   color: var(--text-color--text-primary);
@@ -4295,8 +4295,8 @@ figcaption {
   grid-column-gap: 4rem;
   grid-row-gap: 4rem;
   background-color: var(--base-color-neutral--white-see-through);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border-radius: 3rem;
   flex-flow: column;
   grid-template-rows: auto;
@@ -5001,22 +5001,23 @@ figcaption {
 .card-row39_card.blue {
   border-color: var(--background-color--blue-mariner);
   background-color: var(--background-color--blue-5);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .card-row39_card.pink {
   border-color: var(--background-color--pink-dribbble);
   background-color: var(--background-color--pink-see-through);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .card-row39_card.yellow {
   border-color: var(--background-color--yellow);
   background-color: var(--background-color--yellov-10-opacity);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   color: var(--background-color--yellow);
 }
 
@@ -5117,8 +5118,8 @@ figcaption {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
   background-color: var(--base-color-neutral--white-see-through);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border-radius: 3rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
@@ -5154,7 +5155,7 @@ figcaption {
 }
 
 .product2_heading.white-background {
-  padding: 1.5rem;
+  padding: 3rem;
 }
 
 .body-8 {
