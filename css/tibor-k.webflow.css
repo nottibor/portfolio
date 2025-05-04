@@ -2,11 +2,11 @@
   --background-color--background-primary: transparent;
   --text-color--text-primary: #222;
   --link-color--link-primary: #385ed5;
+  --base-color-neutral--white-see-through: #fff6;
   --background-color--blue-mariner: #385ed5;
   --border-color--border-primary: #2551dd;
   --base-color-neutral--white-less-see-through: #ffffffa6;
   --base-color-neutral--white: white;
-  --text-color--text-grey-light-neutral: #eee;
   --border-color--border-secondary: #f6efdf;
   --text-color--text-secondary: #385ed5;
   --background-color--see-through-background-alternate: #d5c18f1a;
@@ -14,11 +14,11 @@
   --background-color--background-secondary: #e2e2e2;
   --text-color--text-alternate: #907737;
   --background-color--blue-mariner-darker: #2551dd;
+  --text-color--text-grey-light-neutral: #eee;
   --background-color--yellow: #ffe600;
   --background-color--pink-dribbble: #ea4c89;
   --background-color--blue-5: #385ed514;
   --link-color--link-secondary: #907737;
-  --base-color-neutral--white-see-through: #fff6;
   --black-archive\<deleted\|variable-dccb7db6\>: black;
   --background-color--background-alternate: #838383;
   --link-color--link-alternate: #d5c18f;
@@ -367,19 +367,26 @@ figcaption {
   max-height: 100%;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  font-family: Nunito, sans-serif;
+  font-weight: 500;
   display: flex;
 }
 
 .utility_form-block {
   text-align: center;
   flex-direction: column;
-  max-width: 20rem;
+  max-width: 30rem;
   display: flex;
 }
 
 .utility_form {
+  background-color: var(--base-color-neutral--white-see-through);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 1.5rem;
   flex-direction: column;
   align-items: stretch;
+  padding: 1.5rem;
   display: flex;
 }
 
@@ -387,6 +394,10 @@ figcaption {
   margin-bottom: .5rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.utility_image.rounded {
+  border-radius: 1rem;
 }
 
 .container-medium {
@@ -789,7 +800,7 @@ figcaption {
 }
 
 .button.w--current {
-  color: var(--text-color--text-grey-light-neutral);
+  color: var(--text-color--text-primary);
 }
 
 .button.is-link {
@@ -2553,6 +2564,10 @@ figcaption {
 }
 
 .body-3, .body-4 {
+  background-image: url('../images/uriel-xtgONQzGgOE-unsplash_1.avif');
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: IBM Plex Mono;
 }
 
@@ -2987,6 +3002,14 @@ figcaption {
 .portfolio13_component {
   flex-direction: column;
   align-items: center;
+}
+
+.other-projects-links.special-clouds-background {
+  background-image: url('../images/uriel-xtgONQzGgOE-unsplash_1.avif');
+  background-position: 50%;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .portfolio13_item-content-top {
