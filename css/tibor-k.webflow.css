@@ -3814,8 +3814,8 @@ figcaption {
 }
 
 .navbar11_link.w--current {
-  background-color: var(--background-color--blue-mariner-darker);
   color: var(--text-color--text-grey-light-neutral);
+  background-color: #2551dd;
   border-radius: 1rem;
   margin: .125rem;
   font-weight: 500;
