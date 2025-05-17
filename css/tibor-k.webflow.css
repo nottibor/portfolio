@@ -1906,7 +1906,7 @@ figcaption {
 
 .body {
   background-image: url('../images/uriel-xtgONQzGgOE-unsplash_1.avif');
-  background-position: 50%;
+  background-position: 50% 0;
   background-size: cover;
   background-attachment: fixed;
   font-family: Nunito, sans-serif;
