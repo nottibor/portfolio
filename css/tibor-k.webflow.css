@@ -15,7 +15,7 @@
   --text-color--text-alternate: #907737;
   --background-color--blue-mariner-darker: #2551dd;
   --text-color--text-grey-light-neutral: #eee;
-  --background-color--yellow: #ffe600;
+  --background-color--orange: #fd5f00;
   --background-color--pink-dribbble: #ea4c89;
   --background-color--blue-5: #385ed514;
   --link-color--link-secondary: #907737;
@@ -42,9 +42,10 @@
   --elements-webflow-library--neutral--100: white;
   --elements-webflow-library--neutral--300: #eff0f6;
   --elements-webflow-library--general--shadow-01: #14142b0f;
-  --background-color--pink-see-through: #ea4c8914;
+  --background-color--yellow: yellow;
   --background-color--yellov-10-opacity: #ffe60014;
-  --background-color--orange: #fd5f00;
+  --elements-webflow-library--general--shadow-02: #14142b14;
+  --elements-webflow-library--secondary--color-1: #281ca5;
   --base-color-brand--black: black;
   --base-color-brand--white: white;
   --base-color-neutral--neutral-light: #e1e1e1;
@@ -53,6 +54,7 @@
   --base-color-system--error-red-light: #fef3f2;
   --background-color--background-success: #ecfdf3;
   --background-color--background-error: #fef3f2;
+  --background-color--pink-see-through: #ea4c8914;
   --background-color--orange-10: #fd5f000d;
 }
 
@@ -928,12 +930,12 @@ figcaption {
 }
 
 .button.is-link.is-icon.orange {
-  color: var(--background-color--yellow);
+  color: var(--background-color--orange);
 }
 
 .button.is-link.is-icon.orange:hover {
-  background-color: var(--background-color--yellow);
-  color: var(--text-color--text-primary);
+  background-color: var(--background-color--orange);
+  color: var(--base-color-neutral--white);
   text-decoration: none;
 }
 
@@ -5011,7 +5013,9 @@ figcaption {
 }
 
 .card-row39_card {
-  border: 1px solid var(--border-color--border-primary);
+  background-color: var(--base-color-neutral--white-see-through);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   border-radius: 3rem;
   flex-direction: column;
   grid-template-rows: auto;
@@ -5023,6 +5027,7 @@ figcaption {
 }
 
 .card-row39_card.blue {
+  border-style: none;
   border-color: var(--background-color--blue-mariner);
   background-color: var(--background-color--blue-5);
   -webkit-backdrop-filter: blur(20px);
@@ -5030,8 +5035,9 @@ figcaption {
 }
 
 .card-row39_card.pink {
+  border-style: none;
   border-color: var(--background-color--pink-dribbble);
-  background-color: var(--background-color--pink-see-through);
+  background-color: var(--base-color-neutral--white-see-through);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
@@ -5051,7 +5057,7 @@ figcaption {
 }
 
 .paragraph.orange {
-  color: var(--background-color--yellow);
+  color: var(--background-color--orange);
 }
 
 .paragraph-2.pink {
@@ -5187,6 +5193,223 @@ figcaption {
   background-position: 50% 80%;
   background-size: auto;
   background-attachment: fixed;
+}
+
+.heading-11, .heading-12, .heading-13 {
+  font-size: 2.3rem;
+}
+
+.brix---container-default-2 {
+  max-width: 1218px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.brix---link-wrapper-2 {
+  color: var(--elements-webflow-library--neutral--800);
+  align-items: center;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color .3s;
+  display: flex;
+}
+
+.brix---link-wrapper-2:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---link-text {
+  transition: color .3s;
+  display: inline-block;
+}
+
+.brix---header-wrapper {
+  background-color: var(--elements-webflow-library--neutral--100);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.brix---header-content-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.brix---header-nav-menu-list {
+  z-index: 1;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.brix---header-nav-link {
+  color: var(--elements-webflow-library--neutral--800);
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  transition: color .3s;
+}
+
+.brix---header-nav-link:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---dropdown-toggle {
+  color: var(--elements-webflow-library--neutral--800);
+  align-items: center;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  transition: color .3s;
+  display: flex;
+}
+
+.brix---dropdown-toggle:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---dropdown-card {
+  border: 1px solid var(--elements-webflow-library--neutral--300);
+  background-color: var(--elements-webflow-library--neutral--100);
+  box-shadow: 0 2px 12px 0 var(--elements-webflow-library--general--shadow-02);
+  border-radius: 20px;
+  min-width: 280px;
+  top: 32px;
+  overflow: hidden;
+}
+
+.brix---dropdown-link {
+  color: var(--elements-webflow-library--neutral--600);
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color .3s;
+  display: flex;
+}
+
+.brix---dropdown-link:hover {
+  color: var(--elements-webflow-library--accent--primary-1);
+}
+
+.brix---dropdown-pd {
+  padding: 40px;
+}
+
+.brix---header-logo {
+  max-width: 250px;
+}
+
+.brix---header-logo-link {
+  transform-style: preserve-3d;
+  padding-left: 0;
+  transition: transform .3s, color .3s;
+}
+
+.brix---header-logo-link:hover {
+  transform: scale3d(.96, .96, 1.01);
+}
+
+.brix---hamburger-menu-wrapper {
+  padding: 0;
+  transition: transform .3s;
+}
+
+.brix---hamburger-menu-wrapper:hover {
+  transform: scale(.96);
+}
+
+.brix---hamburger-menu-wrapper.w--open {
+  background-color: #0000;
+}
+
+.brix---header-right-col {
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+.brix---dropdown-chevron {
+  width: 14px;
+  margin-left: 6px;
+}
+
+.brix---dropdown-links-grid {
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.brix---dropdown-column-wrapper {
+  background-color: #0000;
+  padding-top: 32px;
+  transform: translate(0);
+}
+
+.brix---dropdown-column-wrapper.w--open {
+  transform: translate(-50%);
+}
+
+.brix---hamburger-menu-bar-top, .brix---hamburger-menu-bar-bottom {
+  background-color: var(--elements-webflow-library--neutral--800);
+  border-radius: 20px;
+  width: 52px;
+  height: 4px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.brix---btn-primary-small {
+  background-color: var(--elements-webflow-library--accent--primary-1);
+  color: var(--elements-webflow-library--neutral--100);
+  text-align: center;
+  transform-style: preserve-3d;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 18px 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-small:hover {
+  background-color: var(--elements-webflow-library--secondary--color-1);
+  color: var(--elements-webflow-library--neutral--100);
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-header-hidden-on-mbl {
+  margin-left: 24px;
+}
+
+.brix---header-nav-list-item-show-in-mbl {
+  margin-bottom: 0;
+  padding-left: 32px;
+  display: none;
+}
+
+.brix---link-icon-left {
+  margin-right: 6px;
+}
+
+.brix---header-nav-list-item-middle {
+  margin-bottom: 0;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @media screen and (max-width: 991px) {
@@ -6069,6 +6292,88 @@ figcaption {
 
   .product2_heading {
     margin-right: 3rem;
+  }
+
+  .brix---header-wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .brix---header-menu-wrapper {
+    border-top: 1px solid var(--elements-webflow-library--neutral--300);
+    border-bottom: 1px solid var(--elements-webflow-library--neutral--300);
+    background-color: var(--elements-webflow-library--neutral--100);
+    padding: 24px;
+  }
+
+  .brix---header-nav-menu-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .brix---dropdown-card {
+    box-shadow: none;
+    background-color: #0000;
+    border-width: 0;
+    border-radius: 0;
+    min-width: auto;
+  }
+
+  .brix---dropdown-card.w--open {
+    position: static;
+  }
+
+  .brix---dropdown-pd {
+    padding: 20px 0 14px;
+  }
+
+  .brix---header-logo {
+    max-width: 232px;
+  }
+
+  .brix---hamburger-menu-wrapper {
+    order: -1;
+    transition: transform .3s;
+  }
+
+  .brix---hamburger-menu-wrapper:hover {
+    transform: scale(.96);
+  }
+
+  .brix---hamburger-menu-wrapper.w--open {
+    background-color: #0000;
+  }
+
+  .brix---dropdown-column-wrapper {
+    padding-top: 0;
+    position: static;
+  }
+
+  .brix---dropdown-column-wrapper.w--open {
+    transform: none;
+  }
+
+  .brix---hamburger-menu-bar-top {
+    width: 44px;
+    height: 3px;
+  }
+
+  .brix---hamburger-menu-bar-bottom {
+    width: 44px;
+    height: 3px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .brix---header-nav-list-item-show-in-mbl {
+    margin-bottom: 16px;
+    padding-left: 0;
+  }
+
+  .brix---header-nav-list-item-middle {
+    margin-bottom: 16px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -6957,6 +7262,22 @@ figcaption {
   .product2_heading {
     margin-right: 0;
   }
+
+  .brix---header-logo {
+    max-width: 90%;
+  }
+
+  .brix---btn-primary-small {
+    padding: 20px 32px;
+  }
+
+  .brix---btn-header-hidden-on-mbl {
+    display: none;
+  }
+
+  .brix---header-nav-list-item-show-in-mbl {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -7304,6 +7625,26 @@ figcaption {
 
   .layout422_row, .product2_list {
     grid-template-columns: 1fr;
+  }
+
+  .brix---container-default-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .brix---header-logo {
+    max-width: 84%;
+  }
+
+  .brix---btn-primary-small {
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .brix---header-nav-list-item-show-in-mbl, .brix---header-nav-list-item-middle {
+    text-align: left;
+    width: 100%;
   }
 }
 
