@@ -3400,18 +3400,24 @@ figcaption {
 }
 
 .success-message-2 {
-  border: 1.5px solid var(--base-color-system--success-green);
-  background-color: var(--background-color--see-through-green);
+  border: 1px solid var(--base-color-system--success-green);
+  background-color: var(--base-color-neutral--white-see-through);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   color: var(--text-color--text-success);
-  border-radius: 0;
+  border-radius: 1rem;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 500;
 }
 
 .error-message-2 {
-  border: 1.5px solid var(--base-color-system--error-red);
-  background-color: var(--background-color--see-through-red-error);
+  border: 1px solid var(--base-color-system--error-red);
+  background-color: var(--base-color-neutral--white-see-through);
   color: var(--text-color--text-error);
-  max-width: 70%;
+  border-radius: 1rem;
+  max-width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -5410,6 +5416,14 @@ figcaption {
   margin-bottom: 0;
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.text-block-4 {
+  color: var(--base-color-system--success-green);
+}
+
+.text-block-5 {
+  text-align: center;
 }
 
 @media screen and (max-width: 991px) {
