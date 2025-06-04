@@ -3832,6 +3832,7 @@ figcaption {
 
 .navbar11_link {
   color: var(--text-color--text-primary);
+  vertical-align: middle;
   border-radius: .5rem;
   margin: .125rem;
   padding: .25rem .75rem;
@@ -3993,16 +3994,16 @@ figcaption {
   grid-auto-columns: 1fr;
   justify-content: flex-start;
   align-items: center;
-  padding: .5rem;
+  padding: .25rem 3rem .25rem .75rem;
   text-decoration: none;
   display: flex;
 }
 
 .navbar11_dropdown-link:hover {
   background-color: var(--background-color--background-primary);
-  color: var(--link-color--link-secondary);
+  color: var(--link-color--link-primary);
   border-radius: .5rem;
-  padding: .5rem;
+  padding: .25rem 3rem .25rem .75rem;
 }
 
 .layout351_instructions-callout-image {
@@ -5697,6 +5698,17 @@ figcaption {
   color: var(--\<unknown\|relume-variable-color-scheme-1-text\>);
 }
 
+.dropdown-list {
+  border-radius: 0;
+}
+
+.dropdown-list.w--open {
+  background-color: var(--base-color-neutral--white-see-through);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  border-radius: 1rem;
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 3.25rem;
@@ -7353,7 +7365,7 @@ figcaption {
   }
 
   .navbar11_component {
-    min-height: 4rem;
+    min-height: 6rem;
   }
 
   .navbar11_dropdown-link {
