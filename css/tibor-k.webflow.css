@@ -2,8 +2,9 @@
   --background-color--background-primary: transparent;
   --text-color--text-primary: #222;
   --link-color--link-primary: #385ed5;
-  --base-color-neutral--white-see-through: #fff6;
   --background-color--blue-mariner: #385ed5;
+  --text-color--text-grey-light-neutral: #eee;
+  --base-color-neutral--white-see-through: #fff6;
   --border-color--border-primary: #2551dd;
   --base-color-neutral--white-less-see-through: #ffffffa6;
   --base-color-neutral--white: white;
@@ -14,7 +15,6 @@
   --background-color--background-secondary: #f1f1f1;
   --text-color--text-alternate: #907737;
   --background-color--blue-mariner-darker: #2551dd;
-  --text-color--text-grey-light-neutral: #eee;
   --background-color--orange: #fd5f00;
   --background-color--pink-dribbble: #ea4c89;
   --background-color--blue-5: #385ed514;
@@ -297,6 +297,12 @@ figcaption {
 .text-style-link {
   color: var(--link-color--link-primary);
   text-decoration: underline;
+}
+
+.text-style-link:hover {
+  background-color: var(--background-color--blue-mariner);
+  color: var(--text-color--text-grey-light-neutral);
+  border-radius: .5rem;
 }
 
 .max-width-xlarge {
@@ -1928,7 +1934,7 @@ figcaption {
 
 .body {
   background-image: url('../images/uriel-xtgONQzGgOE-unsplash_1.avif');
-  background-position: 50% 0;
+  background-position: 50% 100%;
   background-size: cover;
   background-attachment: fixed;
   font-family: Nunito, sans-serif;
@@ -5707,6 +5713,10 @@ figcaption {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 1rem;
+}
+
+.text-span-6 {
+  color: var(--text-color--text-primary);
 }
 
 @media screen and (max-width: 991px) {
