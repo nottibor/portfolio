@@ -5519,7 +5519,6 @@ figcaption {
   background-size: auto;
   background-attachment: fixed;
   border-radius: 1.5rem;
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2rem;
@@ -5704,9 +5703,17 @@ figcaption {
   display: grid;
 }
 
+.layout125_content._3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .section_layout125 {
   background-color: var(--\<unknown\|relume-variable-color-scheme-1-background\>);
   color: var(--\<unknown\|relume-variable-color-scheme-1-text\>);
+}
+
+.layout125_component {
+  margin-top: 7rem;
 }
 
 .dropdown-list {
@@ -6855,6 +6862,8 @@ figcaption {
 
   .layout493_tabs {
     grid-column-gap: 3rem;
+    flex-flow: column;
+    display: flex;
   }
 
   .layout493_tabs-content {
