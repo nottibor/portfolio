@@ -56,6 +56,7 @@
   --background-color--background-error: #fef3f2;
   --background-color--pink-see-through: #ea4c8914;
   --background-color--orange-10: #fd5f000d;
+  --background-color--blue-mariner-see-through: #2551dd66;
 }
 
 .w-layout-grid {
@@ -3856,17 +3857,18 @@ figcaption {
 }
 
 .navbar11_link:hover {
-  background-color: var(--base-color-neutral--white-see-through);
+  background-color: var(--background-color--blue-mariner-darker);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
+  color: var(--text-color--text-grey-light-neutral);
   box-shadow: 0 .9px 1.9px #0000001c;
 }
 
 .navbar11_link.w--current {
-  background-color: var(--base-color-neutral--white-see-through);
+  background-color: var(--background-color--blue-mariner-darker);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  color: var(--text-color--text-primary);
+  color: var(--text-color--text-grey-light-neutral);
   border-radius: 1rem;
   margin: .125rem;
   font-weight: 500;
@@ -9809,6 +9811,10 @@ figcaption {
 
 #w-node-_5bdb4985-3cd5-9956-485a-7928a850d969-36738e68 {
   grid-area: span 2 / span 1 / span 2 / span 1;
+}
+
+#w-node-d856497d-1ac6-681f-8db0-8d1047f23e22-36738e68 {
+  grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
 #w-node-_161a3508-8036-05b6-c261-a881734ba113-36738e68 {
