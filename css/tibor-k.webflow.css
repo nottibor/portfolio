@@ -7198,6 +7198,15 @@ figcaption {
     grid-template-columns: 1fr;
   }
 
+  .layout395_card {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .layout141_image.margin-bottom {
+    border-radius: .7rem;
+  }
+
   .heading-style-h2-5 {
     font-size: 2.75rem;
   }
@@ -8234,6 +8243,10 @@ figcaption {
 
   .text-size-medium-9 {
     font-size: 1rem;
+  }
+
+  .layout141_image.margin-bottom {
+    border-radius: .3rem;
   }
 
   .heading-style-h2-5 {
@@ -10064,6 +10077,11 @@ figcaption {
 @media screen and (max-width: 991px) {
   #w-node-_020bceb7-2ade-ef11-021d-f0b05c6b9cbe-1ffdf3e7 {
     order: -9999;
+  }
+
+  #w-node-b9b4052f-4373-eeb2-c41a-9cb07e513e2e-36738e68, #w-node-_58931f55-8ac4-a7f5-3eca-06f6129b7c63-36738e68 {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
   }
 }
 
