@@ -391,7 +391,7 @@ figcaption {
   max-height: 100%;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  font-family: Nunito, sans-serif;
+  font-family: Nunito;
   font-weight: 500;
   display: flex;
 }
@@ -796,7 +796,7 @@ figcaption {
 }
 
 .heading-style-h1 {
-  font-family: Nunito, sans-serif;
+  font-family: Nunito;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
@@ -1979,7 +1979,7 @@ figcaption {
   background-position: 50%;
   background-size: cover;
   background-attachment: fixed;
-  font-family: Nunito, sans-serif;
+  font-family: Quicksand, sans-serif;
 }
 
 .header104_component {
@@ -2630,7 +2630,7 @@ figcaption {
 }
 
 .body-2 {
-  font-family: Nunito, sans-serif;
+  font-family: Quicksand, sans-serif;
 }
 
 .body-3, .body-4 {
@@ -3442,7 +3442,7 @@ figcaption {
   background-position: 50% 80%;
   background-size: auto;
   background-attachment: fixed;
-  font-family: Nunito, sans-serif;
+  font-family: Quicksand, sans-serif;
 }
 
 .contact-form-input-style {
@@ -4715,8 +4715,12 @@ figcaption {
   color: var(--text-color--text-primary);
 }
 
-.body-6, .body-7 {
-  font-family: Nunito, sans-serif;
+.body-6 {
+  font-family: Nunito;
+}
+
+.body-7 {
+  font-family: Quicksand, sans-serif;
 }
 
 .text-chat-bubles {
@@ -5290,6 +5294,7 @@ figcaption {
   background-position: 50% 80%;
   background-size: auto;
   background-attachment: fixed;
+  font-family: Quicksand, sans-serif;
 }
 
 .heading-11, .heading-12, .heading-13 {
@@ -6181,6 +6186,10 @@ figcaption {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.body-9, .body-10 {
+  font-family: Quicksand, sans-serif;
 }
 
 @media screen and (max-width: 991px) {
