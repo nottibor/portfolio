@@ -3434,13 +3434,14 @@ figcaption {
   margin-right: auto;
   padding: 2rem;
   font-weight: 500;
-  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d, 0 5.1px 10.9px #00000020;
+  box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
 .body-5 {
   background-image: url('../images/uriel-xtgONQzGgOE-unsplash_1.avif');
-  background-position: 50% 80%;
-  background-size: auto;
+  background-position: 50%;
+  background-repeat: repeat;
+  background-size: cover;
   background-attachment: fixed;
   font-family: Quicksand, sans-serif;
 }
@@ -5291,8 +5292,8 @@ figcaption {
 
 .body-8 {
   background-image: url('../images/uriel-xtgONQzGgOE-unsplash_1.avif');
-  background-position: 50% 80%;
-  background-size: auto;
+  background-position: 50%;
+  background-size: cover;
   background-attachment: fixed;
   font-family: Quicksand, sans-serif;
 }
@@ -5753,7 +5754,7 @@ figcaption {
 }
 
 .layout125_content._3-columns._7-rem-top-margin {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 2rem;
 }
 
