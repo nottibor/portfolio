@@ -846,7 +846,7 @@ figcaption {
   background-color: var(--base-color-neutral--white-less-see-through);
   color: var(--text-color--text-primary);
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 5rem;
   padding: .5rem .75rem;
   font-size: 1rem;
   font-weight: 500;
@@ -1570,7 +1570,7 @@ figcaption {
   background-position: 50%;
   background-size: cover;
   background-attachment: fixed;
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -2986,7 +2986,7 @@ figcaption {
 .gallery2_image {
   aspect-ratio: auto;
   object-fit: cover;
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   width: 100%;
   height: 100%;
   overflow: clip;
@@ -3139,7 +3139,7 @@ figcaption {
   background-color: var(--base-color-neutral--white-see-through);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   box-shadow: 0 0 #0000, 0 .1px .2px #0000001a, 0 .9px 1.9px #0000001d;
 }
 
@@ -3688,7 +3688,7 @@ figcaption {
   background-position: 50%;
   background-size: auto;
   background-attachment: fixed;
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   flex: 1;
   width: 100%;
 }
@@ -3804,6 +3804,7 @@ figcaption {
 .content6_image {
   aspect-ratio: 1;
   object-fit: cover;
+  border-radius: 1.2rem;
   width: 100%;
   height: 100%;
 }
@@ -3906,7 +3907,7 @@ figcaption {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   color: var(--text-color--text-primary);
-  border-radius: 1rem;
+  border-radius: 5rem;
   margin: .125rem;
   font-weight: 500;
   box-shadow: 0 .9px 1.9px #0000001c;
@@ -4416,7 +4417,7 @@ figcaption {
   background-color: var(--base-color-neutral--white-see-through);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border-radius: 3rem;
+  border-radius: 1.2rem;
   flex-flow: column;
   grid-template-rows: auto;
   grid-template-columns: .75fr 1fr;
@@ -4433,7 +4434,7 @@ figcaption {
   aspect-ratio: auto;
   border: 8px solid var(--base-color-neutral--white-see-through);
   object-fit: fill;
-  border-radius: 2.9rem;
+  border-radius: 1rem;
   width: 100%;
 }
 
@@ -5118,7 +5119,7 @@ figcaption {
   background-color: var(--base-color-neutral--white-see-through);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
-  border-radius: 3rem;
+  border-radius: 1.5rem;
   flex-direction: column;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
@@ -5576,7 +5577,7 @@ figcaption {
   background-position: 50%;
   background-size: cover;
   background-attachment: fixed;
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   margin-left: auto;
   margin-right: auto;
   padding-top: 2rem;
@@ -5618,7 +5619,7 @@ figcaption {
   background-position: 50%;
   background-size: auto;
   background-attachment: fixed;
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   overflow: hidden;
 }
 
@@ -5912,7 +5913,7 @@ figcaption {
 
 .logo6_wrapper-3 {
   background-color: var(--base-color-neutral--white-less-see-through);
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -5965,7 +5966,7 @@ figcaption {
 
 .layout364_card {
   background-color: var(--base-color-neutral--neutral-lightest);
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   flex-direction: column;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
@@ -5996,7 +5997,7 @@ figcaption {
 .layout364_card-2 {
   background-color: var(--base-color-neutral--neutral-lightest);
   text-align: left;
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   flex-direction: column;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
@@ -6018,7 +6019,7 @@ figcaption {
 }
 
 .image-design-foundation {
-  border-radius: 1.5rem;
+  border-radius: 1.2rem;
   width: 100%;
 }
 
@@ -6113,7 +6114,7 @@ figcaption {
 
 .layout395_card {
   background-color: var(--base-color-neutral--black);
-  border-radius: 2rem;
+  border-radius: 1.2rem;
   flex-direction: column;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
@@ -6157,7 +6158,11 @@ figcaption {
 .layout141_image-wrapper {
   background-color: var(--base-color-neutral--black);
   color: var(--text-color--text-grey-light-neutral);
-  border-radius: 2rem;
+  background-image: url('../images/uriel-xtgONQzGgOE-unsplash_1.avif');
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 1.2rem;
   padding: 2rem;
   overflow: hidden;
 }
@@ -6187,6 +6192,7 @@ figcaption {
 .layout141_image.margin-bottom {
   aspect-ratio: auto;
   object-fit: contain;
+  border-radius: 1.2rem;
   margin-bottom: 2rem;
 }
 
@@ -6198,6 +6204,12 @@ figcaption {
 
 .body-9, .body-10 {
   font-family: Quicksand, sans-serif;
+}
+
+.quick-stack-2 {
+  background-color: var(--background-color--background-secondary);
+  color: var(--text-color--text-primary);
+  border-radius: 1rem;
 }
 
 @media screen and (max-width: 991px) {
