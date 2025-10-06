@@ -15,7 +15,7 @@
   --base-color-neutral--black: black;
   --background-color--background-secondary: #f1f1f1;
   --text-color--text-alternate: #907737;
-  --background-color--pink-dribbble: #ea4c89;
+  --background-color--pink-dribbble: #f06b9e;
   --background-color--orange: #fd5f00;
   --background-color--yellow: #ffff85;
   --background-color--blue-5: #385ed514;
@@ -36,7 +36,7 @@
   --base-color-neutral--white-less-see-through: #ffffffa6;
   --base-color-brand--gradient-green-1: #ceed97;
   --base-color-brand--gradient-peach-1: #f6d88f;
-  --base-color-brand--gradient-lavander-1: #eecdf8;
+  --base-color-brand--gradient-blue-1: #a2e3ee;
   --border-color--border-alternate: #d5c18f;
   --background-color--blue-25: #385ed540;
   --base-color-neutral--neutral-dark: #444;
@@ -49,6 +49,7 @@
   --elements-webflow-library--general--shadow-01: #14142b0f;
   --background-color--yellov-10-opacity: #ffe60014;
   --background-color--blue-mariner-darker: #2551dd;
+  --base-color-brand--gradient-lavander-1: #eecdf8;
   --base-color-brand--gradient-peach-2: #f7eacc;
   --elements-webflow-library--general--shadow-02: #14142b14;
   --elements-webflow-library--secondary--color-1: #281ca5;
@@ -65,10 +66,10 @@
   --base-color-brand--light-blue: #c4d8fb;
   --base-color-brand--baby-blue: #dfeafc;
   --base-color-brand--color: white;
-  --base-color-brand--gradient-blue-1: #a2e3ee;
   --base-color-brand--gradient-blue-2: #d4f2f9;
   --base-color-brand--gradient-lavander-2: #f2d8fa;
   --base-color-brand--gradient-green-2: #d8f1aa;
+  --base-color-brand--strong-yellow: yellow;
 }
 
 .w-layout-grid {
@@ -4092,6 +4093,7 @@ figcaption {
   align-items: center;
   margin: .125rem;
   padding: .5rem 3rem .5rem .75rem;
+  font-weight: 500;
   text-decoration: none;
   display: flex;
 }
@@ -4491,7 +4493,7 @@ figcaption {
   border-style: solid;
   border-width: 1px 3px 3px 1px;
   border-color: var(--base-color-brand--black);
-  background-image: linear-gradient(180deg, var(--base-color-brand--gradient-lavander-1), var(--base-color-neutral--neutral-lightest));
+  background-image: linear-gradient(180deg, var(--base-color-brand--gradient-blue-1), var(--base-color-neutral--neutral-lightest));
   border-radius: .7rem;
 }
 
@@ -5270,6 +5272,7 @@ figcaption {
 .product2_title-wrapper {
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
+  color: var(--text-color--text-primary);
   justify-content: space-between;
   text-decoration: none;
   display: flex;
@@ -5290,7 +5293,7 @@ figcaption {
   border-style: solid;
   border-width: 1px 3px 3px 1px;
   border-color: var(--base-color-brand--black);
-  background-image: linear-gradient(180deg, var(--base-color-brand--gradient-lavander-1), var(--base-color-brand--gradient-lavander-1));
+  background-image: linear-gradient(180deg, var(--base-color-brand--gradient-lavander-1) 64%, var(--base-color-neutral--neutral-lightest));
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-radius: .7rem;
