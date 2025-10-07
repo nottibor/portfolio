@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  Last Published: Mon Oct 06 2025 02:36:09 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Tue Oct 07 2025 00:20:11 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="68e32955469b016c2ebbcb43" data-wf-site="66c974d0820e0738690cf3a6" lang="en">
 <head>
   <meta charset="utf-8">
@@ -9,6 +9,7 @@
   <link href="../css/normalize.css" rel="stylesheet" type="text/css">
   <link href="../css/webflow.css" rel="stylesheet" type="text/css">
   <link href="../css/tibor-k.webflow.css" rel="stylesheet" type="text/css">
+  <style>@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="c2fb144b-6e9c-cb48-a59c-273e1b2e8436"] {height:0px;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="c2fb144b-6e9c-cb48-a59c-273e1b2e8436"] {height:0px;}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="c2fb144b-6e9c-cb48-a59c-273e1b2e8436"] {height:0px;}}</style>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -35,6 +36,490 @@
 </script>
 </head>
 <body>
+  <div data-animation="default" class="navbar11_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="c41fda5e-56fc-55a6-2988-43313d5fc534" role="banner" data-duration="400">
+    <div class="navbar11_container">
+      <a href="../index.html" data-w-id="c41fda5e-56fc-55a6-2988-43313d5fc536" class="navbar11_logo-link w-nav-brand"><img width="100" height="Auto" alt="" src="../images/256.png" loading="lazy" data-w-id="c41fda5e-56fc-55a6-2988-43313d5fc537" class="navbar11_logo"></a>
+      <nav role="navigation" data-w-id="c41fda5e-56fc-55a6-2988-43313d5fc538" class="navbar11_menu is-page-height-tablet w-nav-menu">
+        <div class="navbar11_menu-links">
+          <a href="../index.html" class="navbar11_link w-nav-link">Home</a>
+          <div data-hover="false" data-delay="0" class="w-dropdown">
+            <div class="navbar11_dropdown-link w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>Case Studies</div>
+            </div>
+            <nav class="dropdown-list-2 w-dropdown-list">
+              <a href="../case-study/b2b-dashboard.html" class="dropdown-list top w-dropdown-link">Dashboard UX/UI</a>
+              <a href="../case-study/dental-group.html" class="dropdown-list w-dropdown-link">Dental Clinic CRM</a>
+              <a href="../case-study/parking-app.html" class="dropdown-list bottom w-dropdown-link">Meerkat - Parking Signs App</a>
+            </nav>
+          </div>
+          <a href="../shop-products/candy-shop.html" class="navbar11_link w-nav-link">Web Shop</a>
+          <a href="../hello.html" class="navbar11_link w-nav-link">Contact</a>
+        </div>
+      </nav>
+      <div class="navbar11_menu-button w-nav-button">
+        <div class="menu-icon1">
+          <div class="menu-icon1_line-top-2"></div>
+          <div class="menu-icon1_line-middle-2">
+            <div class="menu-icon1_line-middle-inner"></div>
+          </div>
+          <div class="menu-icon1_line-bottom-2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="legal">
+    <div class="global-styles w-embed">
+      <style>
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+</style>
+    </div>
+    <main class="main-wrapper">
+      <header class="section_legal2-header">
+        <div class="padding-global-5">
+          <div class="container-large">
+            <div class="padding-section-large">
+              <div class="max-width-large-2">
+                <div class="margin-bottom margin-small">
+                  <h1>Refunds, Returns, Faulty Products T&amp;C&#x27;s</h1>
+                </div>
+                <p class="text-size-medium-10">Effective date: 3/10/2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section_legal2-content">
+        <div class="padding-global-5">
+          <div class="container-large">
+            <div class="padding-bottom padding-xhuge">
+              <div class="legal2-content_component">
+                <div data-w-id="c2fb144b-6e9c-cb48-a59c-273e1b2e8430" class="legal2-content_sidebar">
+                  <div data-w-id="c2fb144b-6e9c-cb48-a59c-273e1b2e8431" class="legal2-content_sidebar-heading">
+                    <h3 class="legal2-content_sidebar-heading-text">Table of contents</h3>
+                    <div class="legal2-content_accordion-icon w-embed"><svg width=" 100%" height=" 100%" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"></path>
+                      </svg></div>
+                  </div>
+                  <div id="w-node-c2fb144b-6e9c-cb48-a59c-273e1b2e8435-2ebbcb43" class="margin-top margin-xsmall">
+                    <div data-w-id="c2fb144b-6e9c-cb48-a59c-273e1b2e8436" class="legal2-content_link-content">
+                      <div class="legal2-content_link-wrapper is-h2">
+                        <a href="#" class="legal2-content_link current w-inline-block">
+                          <div fs-toc-element="link" class="text-size-medium-10">Heading 2</div>
+                        </a>
+                        <div fs-toc-element="ix-trigger" class="legal2-content_h-trigger"></div>
+                        <div class="legal2-content_link-wrapper is-h3">
+                          <a href="#" class="legal2-content_link is-h3 w-inline-block">
+                            <div fs-toc-element="link" class="text-size-medium-10">Heading 3</div>
+                          </a>
+                          <div class="legal2-content_link-wrapper is-h4">
+                            <a href="#" class="legal2-content_link is-h4 w-inline-block">
+                              <div fs-toc-element="link" class="text-size-medium-10">Heading 4</div>
+                            </a>
+                            <div class="legal2-content_link-wrapper is-h5">
+                              <a href="#" class="legal2-content_link is-h5 w-inline-block">
+                                <div fs-toc-element="link" class="text-size-medium-10">Heading 5</div>
+                              </a>
+                              <div class="legal2-content_link-wrapper is-h6">
+                                <a href="#" class="legal2-content_link is-h6 w-inline-block">
+                                  <div fs-toc-element="link" class="text-size-medium-10">Heading 6</div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="w-node-c2fb144b-6e9c-cb48-a59c-273e1b2e844c-2ebbcb43" class="max-width-large-2">
+                  <div fs-toc-element="contents" class="text-rich-text w-richtext">
+                    <h2>Heading 2</h2>
+                    <p><strong>Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla.</strong></p>
+                    <p>Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id.</p>
+                    <h3>Heading 3</h3>
+                    <p>Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat.</p>
+                    <p>Tristique odio senectus nam posuere ornare leo metus, ultricies. Blandit duis ultricies vulputate morbi feugiat cras placerat elit. Aliquam tellus lorem sed ac. Montes, sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus elementum faucibus molestie pellentesque. Arcu ultricies sed mauris vestibulum.</p>
+                    <h4>Heading 4</h4>
+                    <p>Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.</p>
+                    <h5>Heading 5</h5>
+                    <p>Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.</p>
+                    <blockquote>&quot;Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus.&quot;</blockquote>
+                    <h6>Heading 6</h6>
+                    <p>Nunc sed faucibus bibendum feugiat sed interdum. Ipsum egestas condimentum mi massa. In tincidunt pharetra consectetur sed duis facilisis metus. Etiam egestas in nec sed et. Quis lobortis at sit dictum eget nibh tortor commodo cursus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="padding-global">
+      <div class="container-large">
+        <div class="padding-vertical padding-medium">
+          <div class="padding-top padding-medium">
+            <div data-w-id="d1fc96d3-1baa-8697-bd90-a3db1849898b" class="footer11_bottom-wrapper">
+              <div class="footer11_credit-text">© 2013-2025 Tibor Kusić. No rights reserved, it&#x27;s the internet! PS - This website uses privacy conscious <a href="https://pirsch.io/ref/mxdxYxvayp" target="_blank" class="link">Pirsch</a> and <a href="https://eu.posthog.com/" class="link">Posthog</a> for analytics. Also check the t-shirt designs <a href="../shop-products/candy-shop.html" class="link">here *Coming soon</a>, check the <a href="../legal/privacy-policy-terms-of-use.html" class="link">Privacy Policy</a> &amp; <a href="../legal/refund-returns-faulty-products.html" aria-current="page" class="link w--current">Returns etc</a>. </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="global-styles w-embed">
+    <style>
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+/* Apply "..." at 100% width */
+.truncate-width { 
+		width: 100%; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+/* Removes native scrollbar */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; 
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+</style>
+  </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=66c974d0820e0738690cf3a6" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="../js/webflow.js" type="text/javascript"></script><!--  Formspark custom forms  -->
   <script src="https://unpkg.com/@botpoison/browser" async=""></script>
